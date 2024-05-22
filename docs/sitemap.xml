@@ -2,157 +2,160 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:7829/collection/day02/01-netlify/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day02/01-netlify/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/spoonful-series/01-spoonful/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/spoonful-series/01-spoonful/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day01/01-github/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day01/01-github/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/prework/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/prework/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day01/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day01/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day01/02-postcards/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day01/02-postcards/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/spoonful-series/02-spoonful/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/spoonful-series/02-spoonful/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day02/02-blogdown/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day02/02-blogdown/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day02/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day02/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/spoonful-series/03-spoonful/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/spoonful-series/03-spoonful/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day01/03-distill/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day01/03-distill/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/day02/03-blogdown/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/social/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/social/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/theme-features/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/theme-features/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/tags/style/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/tags/style/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/color-themes/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/color-themes/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/fonts/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/fonts/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/tags/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/tags/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/collection/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/collection/</loc>
     <lastmod>2021-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/evergreen/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/evergreen/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/evergreen/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/evergreen/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/talk/campfire/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/talk/campfire/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/talk/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/talk/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/workshop/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/workshop/</loc>
     <lastmod>2021-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/series/a-spoonful-of-hugo/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/series/a-spoonful-of-hugo/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/spoonful-series/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/spoonful-series/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/tags/hugo-site/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/tags/hugo-site/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/r/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/r/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/series/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/series/</loc>
     <lastmod>2021-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/seedling/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/seedling/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/talk/second-seedling/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/talk/second-seedling/</loc>
     <lastmod>2021-01-01T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/meetup/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/meetup/</loc>
     <lastmod>2021-01-01T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/rmarkdown/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/rmarkdown/</loc>
     <lastmod>2020-12-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/talk/seedling/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/talk/seedling/</loc>
     <lastmod>2020-01-13T14:15:59-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/project/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/project/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/categories/package/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/categories/package/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/project/giraffes/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/project/giraffes/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/css-grid-scaffold/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/css-grid-scaffold/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/project/penguins/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/project/penguins/</loc>
     <lastmod>2019-07-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/project/bakeoff/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/project/bakeoff/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/blog/built-in-contact-form/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/blog/built-in-contact-form/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/contact/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/form/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/form/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/elements/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/about/header/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/others/</loc>
+    <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url><url>
-    <loc>//localhost:7829/about/sidebar/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/about/header/</loc>
   </url><url>
-    <loc>//localhost:7829/about/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/about/sidebar/</loc>
   </url><url>
-    <loc>//localhost:7829/contributors/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/about/</loc>
   </url><url>
-    <loc>//localhost:7829/license/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/contributors/</loc>
   </url><url>
-    <loc>//localhost:7829/about/main/</loc>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/about/main/</loc>
+  </url><url>
+    <loc>http://localhost:4321/r-ladies-morelia.github.io/license/</loc>
   </url>
 </urlset>
