@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on R-Ladies Morelia</title>
-    <link>r-ladies-morelia.github.io/tags/</link>
+    <link>http://localhost:4321/r-ladies-morelia.github.io/tags/</link>
     <description>Recent content in Tags on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="r-ladies-morelia.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/r-ladies-morelia.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo-Site</title>
-      <link>r-ladies-morelia.github.io/tags/hugo-site/</link>
+      <title>Tutorials</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/tags/tutorials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/tags/hugo-site/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/tags/tutorials/</guid>
       <description></description>
     </item>
   </channel>

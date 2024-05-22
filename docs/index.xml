@@ -2,185 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R-Ladies Morelia</title>
-    <link>r-ladies-morelia.github.io/</link>
+    <link>http://localhost:4321/r-ladies-morelia.github.io/</link>
     <description>Recent content on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="r-ladies-morelia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/r-ladies-morelia.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Netlify</title>
-      <link>r-ladies-morelia.github.io/collection/day02/01-netlify/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day02/01-netlify/</guid>
-      <description>So far, we&amp;rsquo;ve been leveraging GitHub Pages for publishing. This works great, but for blogdown we&amp;rsquo;ll start using Netlify. Let&amp;rsquo;s start RIGHT NOW with a site we&amp;rsquo;ve already built and published.&#xA;Pre-requisites&#xD;Pick either your postcards site, or your distill site from day 01. Refresh your memory- which repository was it again?</description>
+      <title>Crea tu página web</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/project/webpage/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/project/webpage/</guid>
+      <description>&#xD;“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;</description>
     </item>
     <item>
-      <title>A first post</title>
-      <link>r-ladies-morelia.github.io/blog/webpage/01-spoonful/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/blog/webpage/01-spoonful/</guid>
-      <description>&#xD;Hi, I&#39;m the here-bot cat!&#xD;Use me to find your way in your website.&#xA;Here I am:&#xD;content/blog\webpage\01-spoonful.md&#xD;To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}&#xA;My content section is:&#xD;blog&#xD;My layout is:&#xD;single-series&#xD;does this work?&#xD;or this?&#xD;Let&amp;rsquo;s start.&#xA;beginning&#xD;middle&#xD;end&#xD;</description>
+      <title>Web page</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/talk/webpage/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/talk/webpage/</guid>
+      <description>Más adelante aparecerá el link al video.</description>
     </item>
     <item>
-      <title>A GitHub profile</title>
-      <link>r-ladies-morelia.github.io/collection/day01/01-github/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day01/01-github/</guid>
-      <description>Profile&#xD;https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile&#xA;Pin projects to profile&#xD;https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile&#xA;Profile README&#xD;This is new! Let&amp;rsquo;s do it:&#xA;https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme</description>
-    </item>
-    <item>
-      <title>Prework</title>
-      <link>r-ladies-morelia.github.io/collection/prework/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/prework/</guid>
-      <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.&#xA;Set up RStudio Cloud&#xD;Sign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember). I want you to be able to work from your own laptop in this workshop, but Cloud is an important back-up plan should you run into troubles.</description>
-    </item>
-    <item>
-      <title>A postcard</title>
-      <link>r-ladies-morelia.github.io/collection/day01/02-postcards/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day01/02-postcards/</guid>
-      <description>Pre-requisites&#xD;First, make sure you have the latest version of the postcards package installed from CRAN:&#xA;install.packages(&amp;#34;postcards&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;postcards&amp;#34;)&#xD;[1] ‘0.2.0’ Create GitHub repo&#xD;Online.&#xA;Clone GitHub repo&#xD;usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-postcard.git&amp;#34;) &amp;#x2728; Commit &amp;amp; Push! &amp;#x2728;</description>
-    </item>
-    <item>
-      <title>A second post</title>
-      <link>r-ladies-morelia.github.io/blog/webpage/02-spoonful/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/blog/webpage/02-spoonful/</guid>
-      <description>&#xD;Hi, I&#39;m the here-bot cat!&#xD;Use me to find your way in your website.&#xA;Here I am:&#xD;content/blog\webpage\02-spoonful\index.md&#xD;To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}&#xA;My content section is:&#xD;blog&#xD;My layout is:&#xD;single-series&#xD;Images in this page bundle:&#xD;r-ladies-morelia.github.io/blog/webpage/02-spoonful/sidebar-inverse.jpg&#xD;part 2!&#xD;does this work?&#xD;now for some very cool things&#xD;more&#xD;get ready!&#xD;</description>
-    </item>
-    <item>
-      <title>Using blogdown</title>
-      <link>r-ladies-morelia.github.io/collection/day02/02-blogdown/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day02/02-blogdown/</guid>
-      <description>Pre-requisites&#xD;First, make sure you have the latest version of the blogdown package installed from CRAN:&#xA;install.packages(&amp;#34;blogdoown&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;blogdown&amp;#34;)&#xD;[1] ‘1.0’ Create GitHub repo&#xD;Online.&#xA;Clone GitHub repo&#xD;usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-blogdown.git&amp;#34;) &amp;#x2728; Commit &amp;amp; Push! &amp;#x2728;</description>
-    </item>
-    <item>
-      <title>A third post</title>
-      <link>r-ladies-morelia.github.io/blog/webpage/03-spoonful/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/blog/webpage/03-spoonful/</guid>
-      <description>Hi, I&#39;m the here-bot cat!&#xD;Use me to find your way in your website.&#xA;Here I am:&#xD;content/blog\webpage\03-spoonful\index.markdown&#xD;Here is my R Markdown source file:&#xD;blog\webpage\03-spoonful\index.Rmarkdown&#xD;You&#39;ll want to edit this file, then re-knit to see the changes take effect in your site preview.&#xA;To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}&#xA;My content section is:&#xD;blog&#xD;My layout is:&#xD;single-series&#xD;Images in this page bundle:&#xD;r-ladies-morelia.</description>
-    </item>
-    <item>
-      <title>A distill site</title>
-      <link>r-ladies-morelia.github.io/collection/day01/03-distill/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day01/03-distill/</guid>
-      <description>Pre-requisites&#xD;First, make sure you have the latest version of the distill package installed from CRAN:&#xA;install.packages(&amp;quot;distill&amp;quot;)&#xD;Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;distill&amp;#34;) # [1] ‘1.2’ Create GitHub repo&#xD;Online.&#xA;Clone GitHub repo&#xD;usethis::create_from_github(&amp;quot;https://github.com/apreshill/global-distill.git&amp;quot;)&#xD;&amp;#x2728; Commit &amp;amp; Push!</description>
-    </item>
-    <item>
-      <title>Warm woolen mittens</title>
-      <link>r-ladies-morelia.github.io/collection/day02/03-blogdown/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/collection/day02/03-blogdown/</guid>
-      <description>&#xD;Hi, I&#39;m the here-bot cat!&#xD;Use me to find your way in your website.&#xA;Here I am:&#xD;content/collection\day02\03-blogdown\index.md&#xD;To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}&#xA;My content section is:&#xD;collection&#xD;My layout is:&#xD;single-series&#xD;part 2!&#xD;does this work?&#xD;now for some very cool things&#xD;more&#xD;get ready!&#xD;</description>
-    </item>
-    <item>
-      <title>A campfire</title>
-      <link>r-ladies-morelia.github.io/talk/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/talk/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
-    </item>
-    <item>
-      <title>A seedling</title>
-      <link>r-ladies-morelia.github.io/talk/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
-      <guid>r-ladies-morelia.github.io/talk/second-seedling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>An Rmarkdown post</title>
-      <link>r-ladies-morelia.github.io/blog/rmarkdown/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/blog/rmarkdown/</guid>
-      <description>&#xD;Air quality&#xD;with(airquality, boxplot(Temp ~ Month)) with(airquality, plot(Ozone ~ Temp)) mlev &amp;lt;- levels(with(airquality, as.factor(Month))) with(airquality, plot(Ozone ~ Temp, pch = as.numeric(mlev), col = mlev)) </description>
-    </item>
-    <item>
-      <title>A seedling</title>
-      <link>r-ladies-morelia.github.io/talk/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
-      <guid>r-ladies-morelia.github.io/talk/seedling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tachyons for Style</title>
-      <link>r-ladies-morelia.github.io/project/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/project/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort.&#xD;Because Speed&#xD;Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
-    </item>
-    <item>
-      <title>Palmer Penguins</title>
-      <link>r-ladies-morelia.github.io/project/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/project/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.”&#xD;— Chris House, A Complete Guide to CSS Grid Layout 1&#xA;Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
-    </item>
-    <item>
-      <title>Bakeoff</title>
-      <link>r-ladies-morelia.github.io/project/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/project/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website.&#xD;Functional Form&#xD;This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>r-ladies-morelia.github.io/contact/</link>
-      <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
-      <guid>r-ladies-morelia.github.io/contact/</guid>
-      <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder.&#xA;Formspree requires a (free) account and new form to be set up. The link is made on the final published url in the field: Restrict to Domain. It is possible to register up to 2 emails free and you can select which one you want the forms to go to within Formspree in the Settings tab.</description>
-    </item>
-    <item>
-      <title>Typography Styles &amp; Element Examples</title>
-      <link>r-ladies-morelia.github.io/elements/</link>
-      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
-      <guid>r-ladies-morelia.github.io/elements/</guid>
-      <description>Font Sizes&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;6rem&#xA;(96px)&#xD;5rem&#xA;(80px)&#xD;3rem&#xA;(48px)&#xD;2.25rem&#xA;(36px)&#xD;1.5rem&#xA;(24px)&#xD;1.25rem&#xA;(20px)&#xD;1rem&#xA;(16px)&#xD;.875rem&#xA;(14px)&#xD;Type Samples&#xD;Head&amp;shy;line&#xD;Sub&amp;shy;head&amp;shy;line&#xD;Level 1 Heading&#xD;One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
-    </item>
-    <item>
-      <title>Typography Styles &amp; Element Examples</title>
-      <link>r-ladies-morelia.github.io/others/</link>
-      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
-      <guid>r-ladies-morelia.github.io/others/</guid>
-      <description>Font Sizes&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;A&#xD;6rem&#xA;(96px)&#xD;5rem&#xA;(80px)&#xD;3rem&#xA;(48px)&#xD;2.25rem&#xA;(36px)&#xD;1.5rem&#xA;(24px)&#xD;1.25rem&#xA;(20px)&#xD;1rem&#xA;(16px)&#xD;.875rem&#xA;(14px)&#xD;Type Samples&#xD;Head&amp;shy;line&#xD;Sub&amp;shy;head&amp;shy;line&#xD;Level 1 Heading&#xD;One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
+      <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/blog/encuentro/</link>
+      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/blog/encuentro/</guid>
+      <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;El encuentro&amp;hellip;.</description>
     </item>
     <item>
       <title></title>
-      <link>r-ladies-morelia.github.io/about/header/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/about/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/about/header/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/about/header/</guid>
       <description>En esta página encontrarás material de las sesiones de R-Ladies Morelia.</description>
     </item>
     <item>
       <title></title>
-      <link>r-ladies-morelia.github.io/about/sidebar/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/about/sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/about/sidebar/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/about/sidebar/</guid>
       <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
     </item>
     <item>
       <title>Contributors</title>
-      <link>r-ladies-morelia.github.io/contributors/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/contributors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/contributors/</guid>
-      <description>Thank you to all the folks who have contributed both technical and creative skills to this project:&#xA;Desirée De Leon &amp;#x1f992; (designed 5 of the custom color themes, made illustrations for the workshop, and provided general aesthetic feedback along the way)&#xA;Garrick Aden-Buie &amp;#x1f9d9; (debugged headroom.js and lent his panelset.js code to the theme)&#xA;Allison Horst &amp;#x1f415; (awesome illustrations of campfires, seedlings, and evergreens, as well as my R Markdown hedgehog mascot &amp;#x1f994;)</description>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/contributors/</guid>
+      <description></description>
     </item>
     <item>
       <title>De que se trata?</title>
-      <link>r-ladies-morelia.github.io/about/main/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/about/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/about/main/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/about/main/</guid>
       <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
     </item>
     <item>
       <title>License</title>
-      <link>r-ladies-morelia.github.io/license/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/license/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/license/</guid>
       <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
     </item>
   </channel>

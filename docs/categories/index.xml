@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on R-Ladies Morelia</title>
-    <link>r-ladies-morelia.github.io/categories/</link>
+    <link>http://localhost:4321/r-ladies-morelia.github.io/categories/</link>
     <description>Recent content in Categories on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="r-ladies-morelia.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/r-ladies-morelia.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Workshop</title>
-      <link>r-ladies-morelia.github.io/categories/workshop/</link>
+      <title>Package</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/categories/package/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/categories/workshop/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/categories/package/</guid>
       <description></description>
     </item>
     <item>
       <title>R</title>
-      <link>r-ladies-morelia.github.io/categories/r/</link>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/categories/r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/categories/r/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/categories/r/</guid>
       <description></description>
     </item>
     <item>
-      <title>Theme Features</title>
-      <link>r-ladies-morelia.github.io/categories/theme-features/</link>
+      <title>Tutoriales</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/categories/tutoriales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/categories/theme-features/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/categories/tutoriales/</guid>
       <description></description>
     </item>
     <item>
-      <title>Meetup</title>
-      <link>r-ladies-morelia.github.io/categories/meetup/</link>
+      <title>Workshop</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/categories/workshop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/categories/meetup/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/categories/workshop/</guid>
       <description></description>
     </item>
     <item>
-      <title>Package</title>
-      <link>r-ladies-morelia.github.io/categories/package/</link>
+      <title>Eventos</title>
+      <link>http://localhost:4321/r-ladies-morelia.github.io/categories/eventos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>r-ladies-morelia.github.io/categories/package/</guid>
+      <guid>http://localhost:4321/r-ladies-morelia.github.io/categories/eventos/</guid>
       <description></description>
     </item>
   </channel>
