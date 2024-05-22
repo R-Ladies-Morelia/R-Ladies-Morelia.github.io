@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A Spoonful of Hugo on R-Ladies Morelia</title>
-    <link>r-ladies-morelia.github.io/series/a-spoonful-of-hugo/</link>
+    <link>r-ladies-morelia.github.io/blog/webpage/</link>
     <description>Recent content in A Spoonful of Hugo on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="r-ladies-morelia.github.io/series/a-spoonful-of-hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="r-ladies-morelia.github.io/blog/webpage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A first post</title>
       <link>r-ladies-morelia.github.io/blog/webpage/01-spoonful/</link>
