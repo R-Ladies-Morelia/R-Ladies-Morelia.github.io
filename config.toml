@@ -1,4 +1,4 @@
-baseURL = "r-ladies-morelia.github.io/"
+baseURL = "https://r-ladies-morelia.github.io"
 theme = "hugo-apero"
 languageCode = "en"
 title = "R-Ladies Morelia"
@@ -143,7 +143,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Others"
     title = "Others"
-    url = "/Others/"
+    url = "/others/"
     weight = 5
   #[[menu.header]]
   #  name = "Elements"

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eventos on R-Ladies Morelia</title>
-    <link>http://localhost:4321/r-ladies-morelia.github.io/categories/eventos/</link>
+    <link>http://localhost:4321/categories/eventos/</link>
     <description>Recent content in Eventos on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 31 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/r-ladies-morelia.github.io/categories/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/categories/eventos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
-      <link>http://localhost:4321/r-ladies-morelia.github.io/blog/encuentro/</link>
+      <link>http://localhost:4321/blog/encuentro/</link>
       <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/r-ladies-morelia.github.io/blog/encuentro/</guid>
+      <guid>http://localhost:4321/blog/encuentro/</guid>
       <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;El encuentro&amp;hellip;.</description>
     </item>
   </channel>
