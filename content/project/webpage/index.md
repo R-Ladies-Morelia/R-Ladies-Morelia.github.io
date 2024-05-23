@@ -36,9 +36,11 @@ Antes comenzar es importante tener las versiones más recientes de R y RStudio:
 
 - RStudio >= 1.4
 
-También necesitaremos una cuenta de github y una forma de conectar RStudio con github:
+También necesitaremos una cuenta de github y una forma de conectar RStudio con github.
 
-- Tutorial de como realizar esto en el [link](https://haydeeperuyero.github.io/Seminario_Estadistica/manejo-de-proyectos.html#proyectos-colaborativos-git-github)
+## Conectar RStudio con GitHub
+
+
 
 Por último necesitamos instalar lo siguiente:
 
