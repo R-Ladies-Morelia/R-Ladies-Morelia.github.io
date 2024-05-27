@@ -2,7 +2,7 @@
 title: "Web page"
 subtitle: "Testing"
 excerpt: "Aquí encontrarán la plática de como crear su sitio web"
-date: 2024-06-01
+date: 2024-05-27
 featured: true
 show_post_time: false
 event: "Hackaton 2024: R-Ladies Morelia y R-Ladies Querétaro"

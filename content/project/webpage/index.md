@@ -2,7 +2,7 @@
 title: "Crea tu página web"
 subtitle: ""
 excerpt: "En este tutorial aprenderemos a crear un sitio web personal/blog"
-date: 2024-06-01
+date: 2024-05-27
 author: "Haydeé Peruyero"
 featured: true
 draft: false

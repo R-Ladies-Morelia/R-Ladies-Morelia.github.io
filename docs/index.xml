@@ -16,11 +16,25 @@
       <description>¿Cómo conectar GitHub con RStudio?&#xD;Generalmente cuando comenzamos un proyecto, el primer borrador no es el final y queremos una forma de poder llevar un registro de los cambios sobre el tiempo. Cuando colaboramos con otras personas, una forma de compartir el trabajo y hacer ediciones es enviarnos los archivos por email o manternerlos en alguna carpeta que todos tengamos acceso, sin embargo, si a alguien se le olvida avisarnos que hizo cambios o no actualiza los archivos vamos a estar trabajando sobre archivos diferentes y probablemente tengamos perdida de información o que lo que alguien realizo no nos coincide a nosotros.</description>
     </item>
     <item>
+      <title>Crea tu página web</title>
+      <link>https://r-ladies-morelia.github.io/project/webpage/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/webpage/</guid>
+      <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;También necesitaremos una cuenta de github y una forma de conectar RStudio con github.&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().&#xA;Y necesitamos saber un poquito de Markdown.</description>
+    </item>
+    <item>
       <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
       <link>https://r-ladies-morelia.github.io/blog/encuentro/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
       <guid>https://r-ladies-morelia.github.io/blog/encuentro/</guid>
       <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;En Febrero de 2024 R-Ladies Morelia y R-Ladies Querétaro comenzaron una colaboración para tener varias sesiones durante el semestre Febrero 2024 - Junio 2024. Los días 31 de mayo y 1 de junio vamos a tener un evento presencial e híbrido con apoyo de R Consortium RUGS Grants 2024 y Proyecto CONAHCYT Ciencia de Frontera CF2019 217392 &amp;ldquo;Cerrando brechas y extendiendo puentes en Geometría y Topología&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Web page</title>
+      <link>https://r-ladies-morelia.github.io/talk/webpage/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/talk/webpage/</guid>
+      <description>Más adelante aparecerá el link al video.</description>
     </item>
     <item>
       <title></title>

@@ -16,10 +16,31 @@
       <description></description>
     </item>
     <item>
+      <title>Package</title>
+      <link>https://r-ladies-morelia.github.io/categories/package/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/categories/package/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>https://r-ladies-morelia.github.io/categories/r/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/categories/r/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Tutoriales</title>
       <link>https://r-ladies-morelia.github.io/categories/tutoriales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://r-ladies-morelia.github.io/categories/tutoriales/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workshop</title>
+      <link>https://r-ladies-morelia.github.io/categories/workshop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/categories/workshop/</guid>
       <description></description>
     </item>
   </channel>
