@@ -38,10 +38,6 @@ Antes comenzar es importante tener las versiones más recientes de R y RStudio:
 
 También necesitaremos una cuenta de github y una forma de conectar RStudio con github.
 
-## Conectar RStudio con GitHub
-
-
-
 Por último necesitamos instalar lo siguiente:
 
 - Instalar `blogdown`: `install.packages("blogdown")`
@@ -49,6 +45,10 @@ Por último necesitamos instalar lo siguiente:
 - Instalar Hugo: `blogdown::install_hugo()`, verificar que la versión sea una actual con `blogdown::hugo_version()`.
 
 Y necesitamos saber un poquito de Markdown.
+
+**Nota:** Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo. 
+
+[¿Cómo conectar GitHub con RStudio?](https://r-ladies-morelia.github.io/blog/github/)
 
 # 2. Crear tu sitio
 

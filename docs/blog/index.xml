@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R-Ladies Blog on R-Ladies Morelia</title>
-    <link>http://localhost:4321/blog/</link>
+    <link>https://r-ladies-morelia.github.io/blog/</link>
     <description>Recent content in R-Ladies Blog on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 31 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://r-ladies-morelia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
-      <link>http://localhost:4321/blog/encuentro/</link>
-      <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/encuentro/</guid>
-      <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;El encuentro&amp;hellip;.</description>
+      <link>https://r-ladies-morelia.github.io/blog/encuentro/</link>
+      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/blog/encuentro/</guid>
+      <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;En Febrero de 2024 R-Ladies Morelia y R-Ladies Querétaro comenzaron una colaboración para tener varias sesiones durante el semestre Febrero 2024 - Junio 2024. Los días 31 de mayo y 1 de junio vamos a tener un evento presencial e híbrido con apoyo de R Consortium RUGS Grants 2024 y CF2019 217392 &amp;ldquo;Cerrando brechas y extendiendo puentes en Geometría y Topología&amp;rdquo;.&#xA;Linl de registro</description>
     </item>
   </channel>
 </rss>
