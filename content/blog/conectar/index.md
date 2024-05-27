@@ -131,11 +131,35 @@ Después, nos vamos a donde dice **SSH and GPG keys**.
 
 Damos click en el botón que dice **New SSH key**.
 
-![New SSH key](ssh3-png)
+![New SSH key](ssh3.png)
 
 Vamos a colocar un título descriptivo que nos indique para que estamos usando esa llave y pegamos la llave:
 
 ![Añadir datos de la llave](ssh4.png)
+
+Por último, debemos verificar que se realizo la conexión correctamente, para eso, en la terminal colocamos lo siguiente:
+
+```bash
+ssh -T git@github.com
+```
+
+Nos debería de salir un mensaje como el siguiente:
+
+```output
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+ED25519 key fingerprint is SHA256:knscoasnfq3823rnfkcoawasfnauiehfq.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Colocamos `yes` y vamos a observar el siguiente mensaje:
+
+```output
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Hi USER! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+Si vemos un mensaje similar, significa que todo está bien, ahora ya podemos hacer clone, git pull, git push!!!
 
 
 ### Conexión con HTTPS

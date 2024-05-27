@@ -48,7 +48,7 @@
   <meta itemprop="description" content="¿Cómo conectar GitHub con RStudio?Generalmente cuando comenzamos un proyecto, el primer borrador no es el final y queremos una forma de poder llevar un registro de los cambios sobre el tiempo. Cuando colaboramos con otras personas, una forma de compartir el trabajo y hacer ediciones es enviarnos los archivos por email o manternerlos en alguna carpeta que todos tengamos acceso, sin embargo, si a alguien se le olvida avisarnos que hizo cambios o no actualiza los archivos vamos a estar trabajando sobre archivos diferentes y probablemente tengamos perdida de información o que lo que alguien realizo no nos coincide a nosotros.">
   <meta itemprop="datePublished" content="2024-05-27T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-05-27T00:00:00+00:00">
-  <meta itemprop="wordCount" content="990">
+  <meta itemprop="wordCount" content="1103">
   <meta itemprop="keywords" content="Tutoriales">
   
   
@@ -224,9 +224,20 @@ The key&#39;s randomart image is:
 <p>Después, nos vamos a donde dice <strong>SSH and GPG keys</strong>.</p>
 <p><img src="ssh2.png" alt="SSH and GPG keys"></p>
 <p>Damos click en el botón que dice <strong>New SSH key</strong>.</p>
-<p><img src="ssh3-png" alt="New SSH key"></p>
+<p><img src="ssh3.png" alt="New SSH key"></p>
 <p>Vamos a colocar un título descriptivo que nos indique para que estamos usando esa llave y pegamos la llave:</p>
 <p><img src="ssh4.png" alt="Añadir datos de la llave"></p>
+<p>Por último, debemos verificar que se realizo la conexión correctamente, para eso, en la terminal colocamos lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh -T git@github.com
+</span></span></code></pre></div><p>Nos debería de salir un mensaje como el siguiente:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">The authenticity of host &#39;github.com (140.82.114.4)&#39; can&#39;t be established.
+ED25519 key fingerprint is SHA256:knscoasnfq3823rnfkcoawasfnauiehfq.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+</code></pre><p>Colocamos <code>yes</code> y vamos a observar el siguiente mensaje:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">Warning: Permanently added &#39;github.com&#39; (ED25519) to the list of known hosts.
+Hi USER! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><p>Si vemos un mensaje similar, significa que todo está bien, ahora ya podemos hacer clone, git pull, git push!!!</p>
 
 
 
@@ -274,7 +285,7 @@ The key&#39;s randomart image is:
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">5 minute read, 990 words</dd>
+    <dd class="fw5 ml0">6 minute read, 1103 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">
