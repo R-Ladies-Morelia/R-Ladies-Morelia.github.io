@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.126.1">
+<title>Conectar GitHub con RStudio | R-Ladies Morelia</title>
+
+
+<meta property="twitter:site" content="@rladies_morelia">
+<meta property="twitter:creator" content="@rladies_morelia">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Notas">
+
+
+<meta property="og:site_name" content="R-Ladies Morelia">
+<meta property="og:title" content="Conectar GitHub con RStudio | R-Ladies Morelia">
+<meta property="og:description" content="Notas" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="http://localhost:4321/blog/conectar/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="http://localhost:4321/blog/sidebar-listing.jpeg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="http://localhost:4321/blog/sidebar-listing.jpeg" >
+    
+    
+  
+  <meta itemprop="name" content="Conectar GitHub con RStudio">
+  <meta itemprop="description" content="¿Cómo conectar GitHub con RStudio?Generalmente cuando comenzamos un proyecto, el primer borrador no es el final y queremos una forma de poder llevar un registro de los cambios sobre el tiempo. Cuando colaboramos con otras personas, una forma de compartir el trabajo y hacer ediciones es enviarnos los archivos por email o manternerlos en alguna carpeta que todos tengamos acceso, sin embargo, si a alguien se le olvida avisarnos que hizo cambios o no actualiza los archivos vamos a estar trabajando sobre archivos diferentes y probablemente tengamos perdida de información o que lo que alguien realizo no nos coincide a nosotros.">
+  <meta itemprop="datePublished" content="2024-05-27T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-05-27T00:00:00+00:00">
+  <meta itemprop="wordCount" content="990">
+  <meta itemprop="keywords" content="Tutoriales">
+  
+  
+
+
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.fc600ce742546fe629720c5a8ad0a1143c5cccce1be48e78180e574fed054b26.css" integrity="sha256-/GAM50JUb&#43;YpcgxaitChFDxczM4b5I54GA5XT&#43;0FSyY=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.cd9a42a7c390f5b6f0144b74975e4970b1d1cdc6ceb657dc65b24bdc16982fb6.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="http://localhost:4321/" title="Home">
+      <img src="/img/logo-rladies.jpeg" class="dib db-l h2 w-auto" alt="R-Ladies Morelia">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/others/" title="Others">Others</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Conectar GitHub con RStudio</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Haydeé Peruyero in <a href="http://localhost:4321/categories/tutoriales">Tutoriales</a> </p>
+        <p class="f7 db mv0 ttu">May 27, 2024</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        
+
+
+
+<h1 id="cómo-conectar-github-con-rstudio">¿Cómo conectar GitHub con RStudio?
+  <a href="#c%c3%b3mo-conectar-github-con-rstudio"></a>
+</h1>
+<p>Generalmente cuando comenzamos un proyecto, el primer borrador no es el final y queremos una forma de poder llevar un registro de los cambios sobre el tiempo. Cuando colaboramos con otras personas, una forma de compartir el trabajo y hacer ediciones es enviarnos los archivos por email o manternerlos en alguna carpeta que todos tengamos acceso, sin embargo, si a alguien se le olvida avisarnos que hizo cambios o no actualiza los archivos vamos a estar trabajando sobre archivos diferentes y probablemente tengamos perdida de información o que lo que alguien realizo no nos coincide a nosotros.</p>
+<p>Git es un sistema de control de versiones creado para desarrolladores para colaborar en grandes proyectos. Git nos ayuda a llevar un registro de los cambios que se han realizado y quien ha realizado los cambios, además guarda las versiones anteriores y en caso de algún conflicto con versiones recientes siempre es posible regresar a alguna versión previa donde todo funcionaba correctamente. Cada proyecto se guarda en un repositorio que incluye todos los archivos que forman parte del proyecto, esto puede ser bases de datos, reportes, imágenes, scripts, etc.</p>
+<p>Git se puede usar localmente pero si se requiere compartir todo con colaboradores, entonces se debe almacenar en la web para que otros lo puedan descargar. Los repositorios pueden ser públicos o privados. GitHub se ha convertido en uno de los mayores hospederos de repositorios de Git que además incluye algunas otras características útiles.</p>
+<p>Lo primero que necesitamos es tener instalado Git.</p>
+
+
+
+
+<h2 id="instalar-git">Instalar Git
+  <a href="#instalar-git"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Instalar 
+<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git for Windows</a>:</p>
+<ul>
+<li>Configurar su PATH: seleccionar <code>Git from the command line and also from 3rd-party software</code>.</li>
+<li>RStudio prefiere que Git esté instalado en <code>C:/Program Files</code> que suele ser el de default.</li>
+</ul>
+
+
+
+
+<h2 id="configurar-git">Configurar Git
+  <a href="#configurar-git"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Existen dos formas de realizar una conexión con GitHub desde RStudio, depende del tipo de protocolo de seguridad que uno seleccione:</p>
+<ul>
+<li>
+<p>HTTPS</p>
+</li>
+<li>
+<p>SSH</p>
+</li>
+</ul>
+
+
+
+
+<h3 id="conexión-mediante-ssh">Conexión mediante SSH
+  <a href="#conexi%c3%b3n-mediante-ssh"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Primero, vamos a revisar si ya tenemos algunas llaves ssh, en una terminal de Git colocamos lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -al ~/.ssh
+</span></span></code></pre></div><p>Dependiendo de si ya hemos generado llaves ssh, podemos ver algo similar a lo siguiente o algo vacío:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">total 28
+drwx------  2 haydee rstudio-users 4096 May 27 10:39 .
+drwxr-x--- 17 haydee rstudio-users 4096 May 22 16:20 ..
+-rw-------  1 haydee rstudio-users  750 Apr 12 17:07 authorized_keys
+-rw-------  1 haydee rstudio-users  419 May 27 10:39 id_ed25519
+-rw-r--r--  1 haydee rstudio-users  106 May 27 10:39 id_ed25519.pub
+-rw-------  1 haydee rstudio-users 1956 Apr 13 19:50 known_hosts
+-rw-------  1 haydee rstudio-users 1120 Apr 13 19:50 known_hosts.old
+</code></pre><p>En RStudio, vamos a abrir una terminal y colocar:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>ssh<span style="color:#000;font-weight:bold">-</span>keygen <span style="color:#000;font-weight:bold">-</span>t ed25519 <span style="color:#000;font-weight:bold">-</span>C <span style="color:#d14">&#34;email@dominio&#34;</span>
+</span></span></code></pre></div><p>Nos va a salir el siguiente mensaje:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/user/.ssh/id_ed25519):
+</code></pre><p>Vamos a dar enter y no vamos a cambiar el nombre del archivo. Inmediatamente nos preguntará por una contraseña (si colocamos contraseña solo deben recordarla porque será la forma en la que nos permitirá clonar el repositorio y realizar cambios.)</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/user/.ssh/id_ed25519):
+</code></pre><p>Una vez realizado esto, nos desplegará un mensaje similar al siguiente:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">Your identification has been saved in /home/user/.ssh/id_ed25519
+Your public key has been saved in /home/user/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:deHzMDxkasldadAySuvcDQasnflaskfLw8ca7CNbxMjkTxU email@dominio
+The key&#39;s randomart image is:
++--[ED25519 256]--+
+|          . . A. |
+|         = B - + |
+|        o * ^ k o|
+|         B X # * |
+|        S T B o .|
+|       . . = o . |
+|      . o M   .  |
+|       o 5       |
+|        ...      |
++----[SHA256]-----+
+</code></pre><p>Volvemos a colocar en la terminal lo siguiente para verificar que en efecto ya se creo nuestras llaves:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls -al ~/.ssh
+</span></span></code></pre></div><p>Vamos a copiar la llave, una forma de hacerla es como sigue:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat ~/.ssh/id_ed25519.pub
+</span></span></code></pre></div><p>En pantalla veremos algo como lo que sigue:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">ssh-ed25519 BBBdasdasdAC3AAILAFi66Apzasfadgjncajae72ende983nfcasdx7TLY9 email@dominimo
+</code></pre><p>Copiamos eso al clipboard o algún archivo de texto para no perderlo, ya que lo usaremos en un momento para terminar la configuración con GitHub.</p>
+<p>Ahora, debemos pasarle a GitHub nuestra llave para establecer la conexión.</p>
+<p>Vamos a ir nuestra cuenta de GitHub y dar click en <strong>settings</strong></p>
+<p><img src="ssh1.png" alt="Configuración"></p>
+<p>Después, nos vamos a donde dice <strong>SSH and GPG keys</strong>.</p>
+<p><img src="ssh2.png" alt="SSH and GPG keys"></p>
+<p>Damos click en el botón que dice <strong>New SSH key</strong>.</p>
+<p><img src="ssh3-png" alt="New SSH key"></p>
+<p>Vamos a colocar un título descriptivo que nos indique para que estamos usando esa llave y pegamos la llave:</p>
+<p><img src="ssh4.png" alt="Añadir datos de la llave"></p>
+
+
+
+
+<h3 id="conexión-con-https">Conexión con HTTPS
+  <a href="#conexi%c3%b3n-con-https"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Primero debemos asegurarnos que tenemos instalados los paquetes adecuados:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install.packages</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;usethis&#34;</span>, <span style="color:#d14">&#34;gitcreds&#34;</span>, <span style="color:#d14">&#34;gh&#34;</span>))
+</span></span></code></pre></div><p>Ahora debemos identificarnos con nuestras credenciales de GitHub.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>usethis<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">use_git_config</span>(user.name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Usuario GitHub&#34;</span>, user.email <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;email de la cuenta de GitHub&#34;</span>)
+</span></span></code></pre></div><p>Para poder subir los cambios a GitHub, necesitamos autenticarnos, es decir, probar que somos los dueños de la cuenta de GitHub.</p>
+<p>Con este método, se pueden clonar los repositorios usando el url que sale en HTTPS. Para este, necesitamos un <strong>personal access token</strong> (PATH).</p>
+<p>Para obtener el PATH, vamos a correr lo siguiente en la consola de R:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>usethis<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">create_github_token</span>(
+</span></span><span style="display:flex;"><span>  scopes <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;repo&#34;</span>, <span style="color:#d14">&#34;user&#34;</span>, <span style="color:#d14">&#34;gist&#34;</span>, <span style="color:#d14">&#34;workflow&#34;</span>),
+</span></span><span style="display:flex;"><span>  description <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;alguna descripcion&#34;</span>,
+</span></span><span style="display:flex;"><span>  host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;https://github.com/&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Esta función nos abrirá un navegador para generar el PATH:</p>
+<ul>
+<li>Dar una descripción al PATH: por ejemplo &ldquo;Laptop personal/Computadora laboratorio&rdquo;.</li>
+<li>Cambiar la fecha de vencimiento: la fecha puede ser por cierta cantidad de días o sin fecha de vencimiento.</li>
+<li>Dejar las demás opciones default y seleccionar <code>Generar token</code>. Este token deben de <strong>guardarlo</strong> en algún lugar ya que no es posible verlo de nuevo una vez que cierren la página.</li>
+</ul>
+<p>Si olvidan su PATH es posible generar otro.</p>
+<p>Para guardar el PATH, ejecuten el siguiente código en la consola de RStudio:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>gitcreds<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">gitcreds_set</span>(url<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;http://github.user&#34;</span>)
+</span></span></code></pre></div><p>Cuando se habrá la ventana les pedirá pegar su PATH en la consola y presionar enter. De está forma las credenciales ya quedarán guardadas en su computadora.</p>
+<p>Para confirmar que su PATH si se guardo correctamente, correremos el siguiente código:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>gh<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">gh_whoami</span>(.token <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;ghnaojdnvoadenvas_dcasc86&lt;&#34;</span>, .api_url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;https://github.com&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>usethis<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">git_sitrep</span>()
+</span></span></code></pre></div><p>Lo que deberán ver son sus datos de su cuenta de GitHub.</p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">May 27, 2024</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">5 minute read, 990 words</dd>
+  </dl>
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Categories:</dt>
+    <dd class="fw5 ml0"> <a href="http://localhost:4321/categories/tutoriales">Tutoriales</a> </dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="http://localhost:4321/blog/encuentro/">Encuentro de R-Ladies Morelia y R-Ladies Querétaro &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="apreshill/apero"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2024 R-Ladies Morelia
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/R-Ladies-Morelia" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.facebook.com/profile.php?id=100093337606435&amp;mibextid=LQQJ4d" title="facebook-square" target="_blank" rel="me noopener">
+      <i class="fab fa-facebook-square fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.instagram.com/rladies_morelia?igsh=d3dhaWJ6OGZsN2p3" title="instagram" target="_blank" rel="me noopener">
+      <i class="fab fa-instagram fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://x.com/rladies_morelia?s=11" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

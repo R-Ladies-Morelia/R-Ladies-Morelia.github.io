@@ -2,13 +2,13 @@
 title: "Conectar GitHub con RStudio"
 subtitle: ""
 excerpt: "Notas"
-date: 2024-05-31
+date: 2024-05-27
 author: "Haydeé Peruyero"
 draft: false
 # layout options: single, single-sidebar
 layout: single
 categories:
-- Eventos
+- Tutoriales
 ---
 
 # ¿Cómo conectar GitHub con RStudio?
@@ -61,7 +61,7 @@ drwxr-x--- 17 haydee rstudio-users 4096 May 22 16:20 ..
 
 En RStudio, vamos a abrir una terminal y colocar:
 
-```{r, eval=FALSE}
+```r
 ssh-keygen -t ed25519 -C "email@dominio"
 ```
 
@@ -159,7 +159,7 @@ Con este método, se pueden clonar los repositorios usando el url que sale en HT
 
 Para obtener el PATH, vamos a correr lo siguiente en la consola de R:
 
-```{r, eval=FALSE}
+```r
 usethis::create_github_token(
   scopes = c("repo", "user", "gist", "workflow"),
   description = "alguna descripcion",
@@ -177,14 +177,14 @@ Si olvidan su PATH es posible generar otro.
 
 Para guardar el PATH, ejecuten el siguiente código en la consola de RStudio:
 
-```{r, eval=FALSE}
+```r
 gitcreds::gitcreds_set(url="http://github.user")
 ```
 
 Cuando se habrá la ventana les pedirá pegar su PATH en la consola y presionar enter. De está forma las credenciales ya quedarán guardadas en su computadora.
 
 Para confirmar que su PATH si se guardo correctamente, correremos el siguiente código:
-```{r, eval=FALSE}
+```r
 gh::gh_whoami(.token = "ghnaojdnvoadenvas_dcasc86<", .api_url = "https://github.com")
 
 

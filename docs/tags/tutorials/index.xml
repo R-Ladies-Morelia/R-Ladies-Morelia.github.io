@@ -13,7 +13,7 @@
       <link>http://localhost:4321/project/webpage/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/webpage/</guid>
-      <description>&#xD;“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;</description>
+      <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;También necesitaremos una cuenta de github y una forma de conectar RStudio con github.&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().&#xA;Y necesitamos saber un poquito de Markdown.</description>
     </item>
   </channel>
 </rss>
