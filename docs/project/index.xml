@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nuestros proyectos on R-Ladies Morelia</title>
-    <link>http://localhost:4321/project/</link>
+    <link>https://r-ladies-morelia.github.io/project/</link>
     <description>Recent content in Nuestros proyectos on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/project/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Crea tu página web</title>
-      <link>http://localhost:4321/project/webpage/</link>
-      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/webpage/</guid>
-      <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;También necesitaremos una cuenta de github y una forma de conectar RStudio con github.&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().&#xA;Y necesitamos saber un poquito de Markdown.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://r-ladies-morelia.github.io/project/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

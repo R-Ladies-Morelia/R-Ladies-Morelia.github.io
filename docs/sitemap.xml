@@ -2,68 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4321/categories/</loc>
+    <loc>https://r-ladies-morelia.github.io/project/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/project/webpage/</loc>
+    <loc>https://r-ladies-morelia.github.io/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/project/</loc>
+    <loc>https://r-ladies-morelia.github.io/talk/</loc>
     <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/package/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/categories/r/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/talk/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/categories/tutoriales/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/tags/tutorials/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/talk/webpage/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/categories/workshop/</loc>
-    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/blog/conectar/</loc>
+    <loc>https://r-ladies-morelia.github.io/categories/</loc>
     <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/encuentro/</loc>
+    <loc>https://r-ladies-morelia.github.io/blog/conectar/</loc>
     <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/eventos/</loc>
+    <loc>https://r-ladies-morelia.github.io/blog/encuentro/</loc>
     <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/</loc>
+    <loc>https://r-ladies-morelia.github.io/categories/eventos/</loc>
     <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/about/header/</loc>
+    <loc>https://r-ladies-morelia.github.io/blog/</loc>
+    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/about/sidebar/</loc>
+    <loc>https://r-ladies-morelia.github.io/categories/tutoriales/</loc>
+    <lastmod>2024-05-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/about/</loc>
+    <loc>https://r-ladies-morelia.github.io/about/header/</loc>
   </url><url>
-    <loc>http://localhost:4321/contributors/</loc>
+    <loc>https://r-ladies-morelia.github.io/about/sidebar/</loc>
   </url><url>
-    <loc>http://localhost:4321/about/main/</loc>
+    <loc>https://r-ladies-morelia.github.io/about/</loc>
   </url><url>
-    <loc>http://localhost:4321/license/</loc>
+    <loc>https://r-ladies-morelia.github.io/contributors/</loc>
   </url><url>
-    <loc>http://localhost:4321/others/</loc>
+    <loc>https://r-ladies-morelia.github.io/about/main/</loc>
   </url><url>
-    <loc>http://localhost:4321/series/</loc>
+    <loc>https://r-ladies-morelia.github.io/license/</loc>
+  </url><url>
+    <loc>https://r-ladies-morelia.github.io/others/</loc>
+  </url><url>
+    <loc>https://r-ladies-morelia.github.io/series/</loc>
+  </url><url>
+    <loc>https://r-ladies-morelia.github.io/tags/</loc>
   </url>
 </urlset>
