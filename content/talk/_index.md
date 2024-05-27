@@ -1,5 +1,5 @@
 ---
-title: Talks that Last
+title: Talks
 description: |
   Aquí encontrarán una lista de las pláticas y cursos que hemos impartido.
 author: "By @rldaies_morelia"

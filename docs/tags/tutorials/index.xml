@@ -15,5 +15,12 @@
       <guid>https://r-ladies-morelia.github.io/project/webpage/</guid>
       <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;También necesitaremos una cuenta de github y una forma de conectar RStudio con github.&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().&#xA;Y necesitamos saber un poquito de Markdown.</description>
     </item>
+    <item>
+      <title>Presentaciones con Xaringan y Quarto</title>
+      <link>https://r-ladies-morelia.github.io/project/xaringan/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/xaringan/</guid>
+      <description>En este tutorial presentamos un ejemplo de como crear presentaciones con Xaringan y Quarto&#xD;En la siguiente liga se encuentra el tutorial para crear su presentación con Xaringan y Quarto:&#xA;Tutorial&#xA;Un ejemplo de presentación con Xaringan&#xA;Un ejemplo de presentación con Quarto&#xA;GitHub con todo el material y la platilla con tema de RLadies</description>
+    </item>
   </channel>
 </rss>
