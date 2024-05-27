@@ -14,7 +14,7 @@ categories:
 # Encuentro de R-Ladies Morelia y R-Ladies Querétaro
 
 
-En Febrero de 2024 R-Ladies Morelia y R-Ladies Querétaro comenzaron una colaboración para tener varias sesiones durante el semestre Febrero 2024 - Junio 2024. Los días 31 de mayo y 1 de junio vamos a tener un evento presencial e híbrido con apoyo de **R Consortium RUGS Grants 2024** y **CF2019 217392 "Cerrando brechas y extendiendo puentes en Geometría y Topología"**.
+En Febrero de 2024 R-Ladies Morelia y R-Ladies Querétaro comenzaron una colaboración para tener varias sesiones durante el semestre Febrero 2024 - Junio 2024. Los días 31 de mayo y 1 de junio vamos a tener un evento presencial e híbrido con apoyo de **R Consortium RUGS Grants 2024** y **Proyecto CONAHCYT Ciencia de Frontera CF2019 217392 "Cerrando brechas y extendiendo puentes en Geometría y Topología"**.
 
 ![Póster del Hackton 2024](cartel.jpg)
 
