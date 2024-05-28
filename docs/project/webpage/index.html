@@ -48,14 +48,14 @@
   <meta itemprop="description" content="“En este tutorial aprenderemos a crear un sitio web personal/blog”1. Set upAntes comenzar es importante tener las versiones más recientes de R y RStudio:
 R v&gt;=3.6.0
 RStudio &gt;= 1.4
-También necesitaremos una cuenta de github y una forma de conectar RStudio con github.
+Nota: Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.
+¿Cómo conectar GitHub con RStudio?
 Por último necesitamos instalar lo siguiente:
 Instalar blogdown: install.packages(&#34;blogdown&#34;)
-Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().
-Y necesitamos saber un poquito de Markdown.">
+Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().">
   <meta itemprop="datePublished" content="2024-05-27T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-05-27T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1119">
+  <meta itemprop="wordCount" content="2387">
   <meta itemprop="image" content="https://r-ladies-morelia.github.io/project/webpage/featured-hex.png">
   <meta itemprop="keywords" content="Tutorials">
   
@@ -184,7 +184,9 @@ Y necesitamos saber un poquito de Markdown.">
 <p>RStudio &gt;= 1.4</p>
 </li>
 </ul>
-<p>También necesitaremos una cuenta de github y una forma de conectar RStudio con github.</p>
+<p><strong>Nota:</strong> Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.</p>
+<p>
+<a href="https://r-ladies-morelia.github.io/blog/github/" target="_blank" rel="noopener">¿Cómo conectar GitHub con RStudio?</a></p>
 <p>Por último necesitamos instalar lo siguiente:</p>
 <ul>
 <li>
@@ -195,9 +197,6 @@ Y necesitamos saber un poquito de Markdown.">
 </li>
 </ul>
 <p>Y necesitamos saber un poquito de Markdown.</p>
-<p><strong>Nota:</strong> Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.</p>
-<p>
-<a href="https://r-ladies-morelia.github.io/blog/github/" target="_blank" rel="noopener">¿Cómo conectar GitHub con RStudio?</a></p>
 
 
 
@@ -216,6 +215,7 @@ Y necesitamos saber un poquito de Markdown.">
     </svg></a>
 </h2>
 <p>Lo primero que debemos hacer es crear un repositorio en github que alojará nuestra página web.</p>
+<p>Si nuestra página web se llamará &ldquo;RLadiesMorelia&rdquo;, nuestro repositorio se debe llamar &ldquo;RLadiesMorelia.github.io&rdquo; ya que ese será el dominio de nuestro sitio web.</p>
 <div id="" class="panelset">
   
 <div class="panel">
@@ -282,9 +282,7 @@ En primer lugar clonaremos el repositorio para trabajar de manera local.</p>
 <img src="clonar01.png" alt="clonar01"></li>
 <li>Después hacemos click en <code>Git</code>.
 <img src="clonar02.png" alt="clonar02"></li>
-<li>Copiar la url del repositorio que deseamos clonar.
-<img src="clonar03.png" alt="clonar03"></li>
-<li>Pegar la url en la ventana de RStudio. Cambiar el nombre del directorio (si así lo deseamos), elegir la carpeta donde se va a guardar el clón del repositorio. Marcar <code>Open in new session</code> para que el proyecto utilice su propia sesión de <code>R</code>.
+<li>Pegar la url que se copio de HTTPS o SSH en la ventana de RStudio. Cambiar el nombre del directorio (si así lo deseamos), elegir la carpeta donde se va a guardar el clón del repositorio. Marcar <code>Open in new session</code> para que el proyecto utilice su propia sesión de <code>R</code>.
 <img src="clonar04.png" alt="clonar04">
 Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</li>
 </ol>
@@ -299,64 +297,40 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<div id="" class="panelset">
-  
-<div class="panel">
-  <div class="panel-name">Por hacer &#x2714;&#xfe0f;</div>
-  
-  <p><p>Vamos a usar blogdown para crear un sitio web con el tema de Hugo Apéro. En la consola de RStudio realizamos lo siguiente:</p>
+<p>Vamos a usar blogdown para crear un sitio web con el tema de Hugo Apéro. En la consola de RStudio realizamos lo siguiente:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">library</span>(blogdown)
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#900;font-weight:bold">new_site</span>(theme <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hugo-apero/hugo-apero&#34;</span>, 
 </span></span><span style="display:flex;"><span>           format <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;toml&#34;</span>,
 </span></span><span style="display:flex;"><span>           sample <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">FALSE</span>,
 </span></span><span style="display:flex;"><span>           empty_dirs <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
 </span></span></code></pre></div><p>Nos saldrá un mensaje que pregunta si queremos visualizar el ejemplo del sitio, colocar <code>y</code>.</p>
-</p>
-</div>
-<div class="panel">
-  <div class="panel-name">Mensaje &#x1f4ac;</div>
-  
-  <p><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>― Creating your new site
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>― Creating your new site
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">|</span> Installing the theme hugo<span style="color:#000;font-weight:bold">-</span>apero<span style="color:#000;font-weight:bold">/</span>hugo<span style="color:#000;font-weight:bold">-</span>apero from github.com
-</span></span><span style="display:flex;"><span>trying URL <span style="color:#d14">&#39;https://github.com/hugo-apero/hugo-apero/archive/main.tar.gz&#39;</span>
-</span></span><span style="display:flex;"><span>downloaded <span style="color:#099">21.3</span> MB
+</span></span><span style="display:flex;"><span>trying URL <span style="color:#d14">&#39;https://github.com/hugo-apero/hugo-apero/archive/HEAD.tar.gz&#39;</span>
+</span></span><span style="display:flex;"><span>downloaded <span style="color:#099">21.4</span> MB
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">|</span> Adding the sample post to content<span style="color:#000;font-weight:bold">/</span>blog<span style="color:#000;font-weight:bold">/</span><span style="color:#099">2020-12-01</span><span style="color:#000;font-weight:bold">-</span>r<span style="color:#000;font-weight:bold">-</span>rmarkdown<span style="color:#000;font-weight:bold">/</span>index.Rmd
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">|</span> Converting all metadata to the YAML format
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">|</span> Adding netlify.toml <span style="color:#000;font-weight:bold">in</span> case you want to deploy the site to Netlify
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">|</span> Adding .Rprofile to set <span style="color:#900;font-weight:bold">options</span>() <span style="color:#000;font-weight:bold">for</span> blogdown
 </span></span><span style="display:flex;"><span>― The new site is ready
 </span></span><span style="display:flex;"><span>○ To start a local preview<span style="color:#000;font-weight:bold">:</span> use blogdown<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">serve_site</span>(), or the RStudio add<span style="color:#000;font-weight:bold">-</span><span style="color:#000;font-weight:bold">in</span> <span style="color:#d14">&#34;Serve Site&#34;</span>
 </span></span><span style="display:flex;"><span>○ To stop a local preview<span style="color:#000;font-weight:bold">:</span> use blogdown<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">stop_server</span>(), or restart your R session
-</span></span><span style="display:flex;"><span>► Want to serve and preview the site now<span style="color:#000;font-weight:bold">?</span> (y<span style="color:#000;font-weight:bold">/</span>n)
-</span></span></code></pre></div></p>
-</div>
-<div class="panel">
-  <div class="panel-name">Screenshot &#x1f4f7;</div>
-  
-  <p><img src="new-apero.png" alt="Screenshot: Nuevo sitio en R"></p>
-</div>
-
-</div>
-<div id="" class="panelset">
-  
-<div class="panel">
-  <div class="panel-name">Por hacer &#x2714;&#xfe0f;</div>
-  
-  <p><p>Nos preguntará si queremos tener un preview del sitio web:</p>
+</span></span><span style="display:flex;"><span>► Want to serve and preview the site now<span style="color:#000;font-weight:bold">?</span> (y<span style="color:#000;font-weight:bold">/</span>n) 
+</span></span></code></pre></div><p><img src="new-apero.png" alt="Screenshot: Nuevo sitio en R"></p>
+<p>Nos preguntará si queremos tener un preview del sitio web:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>► Want to serve and preview the site now<span style="color:#000;font-weight:bold">?</span> (y<span style="color:#000;font-weight:bold">/</span>n)
-</span></span></code></pre></div><p>Seleccionamos <code>y</code> y dejamos que blogdown cree el sitio. Esto nos abrirá en el panel inferior derecho la pestaña Viewer, pero no solo podemos visualizarlo ahí:</p>
-<p>Da click en el icon  <i class="fas fa-external-link-alt"></i> <em>Show in new window</em> (a la derecha del símbolo &#x1f9f9;) para previsualizarlo en un navegador.</p>
-</p>
-</div>
-<div class="panel">
-  <div class="panel-name">Screenshot &#x1f4f7;</div>
-  
-  <p><img src="serve-apero.png" alt="Screenshot: Tu sitio en RStudio"></p>
-</div>
-
-</div>
-<p>Lo que resta es comenzar a configurarlo &#x1f680;</p>
+</span></span></code></pre></div><p>Seleccionamos <code>y</code> y dejamos que blogdown cree el sitio. Esto nos abrirá en el panel inferior derecho la pestaña Viewer. Si damos click en el icon  <i class="fas fa-external-link-alt"></i> <em>Show in new window</em> (a la derecha del símbolo &#x1f9f9;) podemos previsualizarlo en un navegador!!</p>
+<p><img src="serve-apero.png" alt="Screenshot: Tu sitio en RStudio"></p>
+<p>Ahora, debemos configurarlo, pero antes, vamos a enviar este sitio de prueba a nuestro GitHub para tener el respaldo del sitio inicial y si algo sale mal en la configuración no tener que repetir todo.</p>
+<p>Vamos a ir a la terminal de nuevo y colocamos lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add.
+</span></span></code></pre></div><p>Esto lo que hará es añadir todo lo que hemos realizado al <code>área de preparación</code>. Ahora, realizaremos nuestro primer commit.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#d14">&#34;inicializar la plantilla de página web&#34;</span>
+</span></span></code></pre></div><p>Resta solo hacer un push a nuestro GitHub:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p><img src="git-push.png" alt="Screenshot: guardar cambior y hacer git push a GitHub"></p>
+<p>Si vamos ahora a nuestro repo de GitHub, veremos todos los archivos que se crearon con esta plantilla.</p>
+<p><img src="primer-commit.png" alt="Screenshot: primer commit en GitHub"></p>
 
 
 
@@ -373,6 +347,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 <li>
 <a href="https://themes.gohugo.io/" target="_blank" rel="noopener">TEMAS DISPONIBLES</a></li>
 </ul>
+<p>Cambiar en el siguiente código <code>hugo-apero/hugo-apero</code> por el tema a actualizar.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>blogdown<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">install_theme</span>(theme <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;hugo-apero/hugo-apero&#34;</span>,
 </span></span><span style="display:flex;"><span>                        update_config <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">FALSE</span>, 
 </span></span><span style="display:flex;"><span>                        force <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
@@ -397,7 +372,8 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 <h1 id="3-configurar-tu-sitio">3. Configurar tu sitio
   <a href="#3-configurar-tu-sitio"></a>
 </h1>
-<p>Ahora, solo tenemos que configurar el sitio.</p>
+<p>Ahora, vamos a comenzar la configuración del sitio.</p>
+<p>En el panel inferior derecho, en files vamos a encontrar todos los archivos que trae de prueba el tema de Hugo-Apero. Vamos a comenzar con el archivo que se llama config.toml que es donde se encuentran todas las variables inciales.</p>
 
 
 
@@ -408,14 +384,53 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<p>Algunas variables a configurar de Hugo se encuentran en el archivo <code>config.toml</code>La lista completa de variables esta en 
-<a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings" target="_blank" rel="noopener">Hugo docs</a>. Las que podemos comenzar a editar son:</p>
+<p>La lista completa de variables de Hugo esta en 
+<a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings" target="_blank" rel="noopener">Hugo docs</a>.</p>
+<p>Las primeras que editaremos son las de título y autor.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>baseURL = <span style="color:#d14">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#d14">&#34;hugo-apero&#34;</span>
+</span></span><span style="display:flex;"><span>languageCode = <span style="color:#d14">&#34;en&#34;</span>
 </span></span><span style="display:flex;"><span>title = <span style="color:#d14">&#34;R-Ladies Morelia&#34;</span>
-</span></span><span style="display:flex;"><span>author = <span style="color:#d14">&#34;Haydeé Peruyero&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># set deliberately low for testing- choose your preferred number </span>
-</span></span><span style="display:flex;"><span>paginate = <span style="color:#099">5</span>
+</span></span><span style="display:flex;"><span>author = <span style="color:#d14">&#34;Hadyeé Peruyero&#34;</span>
+</span></span></code></pre></div><p>Vamos a añadir una opción más después de autor, para indicar donde se guardará todos los docs que se crearán ya que esto es lo que usaremos para hospedar el sitio web en GitHub.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>publishDir = <span style="color:#d14">&#34;docs&#34;</span>
+</span></span></code></pre></div><p>Damos click en guardar y después en la parte superior aparece un botón que dice <code>Addins</code>, damos click en <code>serve_site</code> y vamos a observar que se crea una carpeta <code>docs</code> en los archivos.</p>
+<p><img src="docsdir.png" alt="Screenshot: Cambiar el directorio a docs"></p>
+<p>Hasta el momento tenemos solo una previsualización de nuestro sitio. Vamos a &ldquo;construirlo&rdquo; y enviar eso a GitHub. Vamos escribir en la consola lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>blogdown::build_site<span style="color:#000;font-weight:bold">()</span>
 </span></span></code></pre></div>
+
+
+
+<h2 id="hospedar-sitio-en-github">Hospedar sitio en GitHub
+  <a href="#hospedar-sitio-en-github"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Ya que tenemos construido el sitio, vamos a de nuevo realizar un commit y enviar todo a GitHub para comenzar configurar el sitio en GitHub y que ya esté &ldquo;vivo&rdquo;.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#d14">&#34;Actualización de carpeta docs&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><p>En GitHub, nos vamos a ir a &ldquo;settings&rdquo;.</p>
+<p><img src="settings.png" alt="Screenshot: Settings"></p>
+<p>Después, vamos a &ldquo;Pages&rdquo;.</p>
+<p><img src="pages.png" alt="Screenshot: pages"></p>
+<p>Buscamos la sección de &ldquo;Build and deployment&rdquo; y &ldquo;Branch&rdquo;</p>
+<p><img src="branch.png" alt="Screenshot: Build and deployment"></p>
+<p>Y en la parte de &ldquo;Branch&rdquo; realizamos la configuración de <code>main-docs</code>:</p>
+<p><img src="main-docs.png" alt="Screenshot: Select branch: main, Select folder: docs"></p>
+<p>Después de unos minutos, si actualizamos la página, veremos el nuevo dominio donde quedará hospedada la página web.</p>
+<p><img src="link.png" alt="Screenshot: Link a página &ldquo;viva&rdquo;"></p>
+<p>Existe una forma de configurar el dominio de nuestra página, en esa sección de GitHub trae un link a la documentación de como configurar el dominio.</p>
+<p><img src="domain.png" alt="Screenshot: Configurar el dominio"></p>
+<p>Una alternativa a esto, es crear una &ldquo;Organización&rdquo; con algún título que queramos que sea nuestro dominio y ahí generar nuestra página web con el nombre de la organización, por ejemplo, crear una organización llamada RLadiesMorelia y un repositorio llamado RLadiesMorelia.github.io.</p>
+<p>Si ya creamos nuestro sitio y estamos teniendo problemas con la visualización debido al nombre de nuestra cuenta y del repositorio, se puede realizar esto último de crear una Organización y transferir el repositorio que estamos configurando. Una vez hecho esto, solo debemos actualizar en nuestro proyecto local el <code>origin</code> del repositorio para seguir haciendo cambios desde el local y no tener que volver a clonarlo.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git remote set-url origin git@github.com:name/name.github.io.git
+</span></span></code></pre></div><p>Esto de aquí <code>git@github.com:name/name.github.io.git</code> es el link que nos proporciona el tipo de conexión que realizamos al repositorio, ya sea en el boton de HTTPS o SSH.</p>
+
 
 
 
@@ -425,7 +440,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<p>Existen varias variables de Apéro globales que tal vez nos interese modificar. Todas se encuentran después de la sección <code>[params]</code> en el archivo <code>config.toml</code>. Las más importantes son:</p>
+<p>Existen varias variables de Apéro globales que podemos modificar. Todas se encuentran después de la sección <code>[params]</code> en el archivo <code>config.toml</code>. Las más importantes son:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
 </span></span><span style="display:flex;"><span>  orgName = <span style="color:#d14">&#34;RStudio&#34;</span>
 </span></span><span style="display:flex;"><span>  orgLocal = <span style="color:#d14">&#34;Anywhere&#34;</span>
@@ -439,14 +454,52 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 </span></span><span style="display:flex;"><span>  sharing_image = <span style="color:#d14">&#34;/img/papillons.jpg&#34;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Twitter username (without @). Used when a visitor shares your site on Twitter.</span>
 </span></span><span style="display:flex;"><span>  twitter = <span style="color:#d14">&#34;apreshill&#34;</span>
-</span></span></code></pre></div><p>Todas las imágenes las deberíamos poner en un folder llamado <code>/static/img/</code> (<code>favicon</code>, <code>logo</code>, y <code>sharing_image</code>) en la raiz del proyecto.</p>
+</span></span></code></pre></div><p>Todas las imágenes las deberíamos poner en un folder llamado <code>/static/img/</code> (<code>favicon</code>, <code>logo</code>, y <code>sharing_image</code>) en la raíz del proyecto.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>config.toml
 </span></span><span style="display:flex;"><span>static/
 </span></span><span style="display:flex;"><span>└── img/
 </span></span><span style="display:flex;"><span>    ├── favicon.ico 
 </span></span><span style="display:flex;"><span>    ├── blogophonic-mark-dark.png
 </span></span><span style="display:flex;"><span>    └── papillons.jpg
-</span></span></code></pre></div>
+</span></span></code></pre></div><p>Vamos a actualizar algunas de las imágenes para ir viendo como configurarlo:</p>
+<ul>
+<li>papillons.jpg</li>
+<li>revoir.png</li>
+<li>favicon.ico</li>
+<li>blogophonic-mark-dark.png</li>
+<li>avatar.png</li>
+</ul>
+<p>Subamos algunas imágenes con esos nombres a la carpeta <code>static</code> y la imágen avatar.png a la carpeta <code>about/sidebar</code>.</p>
+<p>Una vez actualizadas esas imágenes, vamos a modificar el archivo de configuración:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  orgName = <span style="color:#d14">&#34;RLadiesMorelia&#34;</span>
+</span></span><span style="display:flex;"><span>  orgLocal = <span style="color:#d14">&#34;Haydeé Peruyero&#34;</span>
+</span></span><span style="display:flex;"><span>  description = <span style="color:#d14">&#34;Una página de prueba de RLadies Morelia&#34;</span>
+</span></span><span style="display:flex;"><span>  favicon = <span style="color:#d14">&#34;/img/favicon.ico&#34;</span>
+</span></span><span style="display:flex;"><span>  logo = <span style="color:#d14">&#34;/img/logo-rladies.jpeg&#34;</span>
+</span></span><span style="display:flex;"><span>  mainSections = [<span style="color:#d14">&#34;blog&#34;</span>, <span style="color:#d14">&#34;project&#34;</span>, <span style="color:#d14">&#34;talk&#34;</span>]
+</span></span><span style="display:flex;"><span>  navallcaps = <span style="color:#000;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Default image for social sharing and search engines. </span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Place image file in `static` folder and specify image name here.</span>
+</span></span><span style="display:flex;"><span>  sharing_image = <span style="color:#d14">&#34;/img/papillons.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Twitter username (without @). Used when a visitor shares your site on Twitter.</span>
+</span></span><span style="display:flex;"><span>  twitter = <span style="color:#d14">&#34;rladiesmorelia&#34;</span>
+</span></span></code></pre></div><p>Vamos a darle guardar, y vamos a abrir ahora el archivo <code>_index.md</code> que se encuentra dentro de la carpeta <code>content</code>. En ese archivo, vamos a realizar unas modificaciones:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>title: &#34;RLadies Morelia&#34;
+</span></span><span style="display:flex;"><span>subtitle: &#34;Una página de prueba para el tutorial de RLadies Morelia&#34;
+</span></span><span style="display:flex;"><span>description: &#34;Esta página será una prueba adicional a la página de RLadies Morelia&#34;
+</span></span><span style="display:flex;"><span>images:
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">-</span> img/logo-rladies.jpeg
+</span></span><span style="display:flex;"><span>image_left: true
+</span></span><span style="display:flex;"><span>text_align_left: false
+</span></span><span style="display:flex;"><span>show_social_links: true # specify social accounts in site config
+</span></span><span style="display:flex;"><span>show_action_link: true
+</span></span><span style="display:flex;"><span>action_link: /about
+</span></span><span style="display:flex;"><span>action_label: &#34;Read More <span style="color:#800080">&amp;rarr;</span>&#34;
+</span></span><span style="display:flex;"><span>action_type: text # text, button
+</span></span><span style="display:flex;"><span>type: home
+</span></span></code></pre></div><p>Guardamos ambos archivos y vamos al menú de <code>Viewer</code> para visualizar estos cambios.</p>
+
 
 
 
@@ -465,7 +518,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 <li>Personalizar con 
 <a href="/learn/color-themes/#bring-your-own-hex-codes">hex codes</a>.</li>
 </ul>
-<p>Esta sección se encuentra también el archivo <code>config.toml</code>.</p>
+<p>De nuevo, en el archivo <code>config.toml</code>, vamos a buscar la siguiente sección que es donde podemos modificar colores.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># use a built-in color theme</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># one of: forest / grayscale / peach / plum /</span>
@@ -477,10 +530,131 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># the custom scss file must be in the assets/ folder</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># add the filename name here, without extension</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># to use hex colors instead of named tachyons colors, include &#34;hex&#34; in filename</span>
-</span></span><span style="display:flex;"><span>  custom_theme = <span style="color:#d14">&#34;hex-colors&#34;</span> 
-</span></span></code></pre></div><p>La documentación completa esta en el 
-<a href="/learn/color-themes/">link</a>.</p>
+</span></span><span style="display:flex;"><span>  custom_theme = <span style="color:#d14">&#34;&#34;</span> 
+</span></span></code></pre></div><p>Cambiemos el <code>theme</code> y demos guardar, vamos a observar en <code>Viewer</code> estos cambios de inmediato.</p>
 
+
+
+
+<h3 id="colores-personalizables">Colores personalizables
+  <a href="#colores-personalizables"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Vamos a ir a la carpeta <code>assets</code> que se encuentra en la raíz, dentro de esa carpeta están unos archivos <code>named-color.scss</code> y <code>hex-colors.scss</code>. Vamos a abrir el segundo:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#998;font-style:italic">// set custom hex colors 
+</span></span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"></span><span style="color:#008080">$siteBgColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#8F7ED4</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$sidebarBgColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$textColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$sidebarTextColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#666260</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$headlineColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$headingColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$bodyLinkColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$navLinkColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$sidebarLinkColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#FA6F35</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$footerTextColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#F9A51E</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$buttonTextColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#f7f7f4</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$buttonHoverTextColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#f9f9f8</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$buttonBgColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#5B2AB6</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$buttonHoverBgColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#FA6F35</span>;
+</span></span><span style="display:flex;"><span><span style="color:#008080">$borderColorCustom</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#F9A51E</span>;
+</span></span></code></pre></div><p>Esa es la lista de colores que necesitaríamos configurar si quisieramos crear un tema nuevo. Esa lista es un ejemplo con algunos de los colores de RLadies Morelia. Si por ejemplo modificamos esos colores, la forma de visualizar esos cambios sería cambiar en el archivo <code>config.toml</code> lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># use a built-in color theme</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># one of: forest / grayscale / peach / plum /</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic">#         poppy / sky / violet / water</span>
+</span></span><span style="display:flex;"><span>  theme = <span style="color:#d14">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># or, leave theme empty &amp; make your own palette</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># see docs at https://hugo-apero.netlify.app/learn/color-themes/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># the custom scss file must be in the assets/ folder</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># add the filename name here, without extension</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># to use hex colors instead of named tachyons colors, include &#34;hex&#34; in filename</span>
+</span></span><span style="display:flex;"><span>  custom_theme = <span style="color:#d14">&#34;hex-colors&#34;</span> 
+</span></span></code></pre></div><p>Con el otro archivo de <code>named-colors.scss</code> es similar.</p>
+<p>La documentación completa de como realizar estos cambios está en el 
+<a href="https://hugo-apero.netlify.app/blog/color-themes/" target="_blank" rel="noopener">link</a>.</p>
+
+
+
+
+<h2 id="social-icons">Social icons
+  <a href="#social-icons"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>En el archivo <code>config.toml</code> se encuentra una sección para configurar los icons a sus redes sociales:</p>
+<p><strong>NOTA:</strong> Probablemente necesiten instalar <code>fontawesome, icons, academicons</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># show/hide social icons in site header &amp; footer</span>
+</span></span><span style="display:flex;"><span>  socialInHeader = <span style="color:#000;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>  socialInFooter = <span style="color:#000;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  [[params.social]]
+</span></span><span style="display:flex;"><span>      icon      = <span style="color:#d14">&#34;github&#34;</span> <span style="color:#998;font-style:italic"># icon name without the &#39;fa-&#39;</span>
+</span></span><span style="display:flex;"><span>      icon_pack = <span style="color:#d14">&#34;fab&#34;</span>
+</span></span><span style="display:flex;"><span>      url       = <span style="color:#d14">&#34;https://github.com/orgs/R-Ladies-Morelia/repositories&#34;</span>
+</span></span><span style="display:flex;"><span>  [[params.social]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
+</span></span></code></pre></div><p>La documentación completa para esto se encuentra en el link 
+<a href="https://hugo-apero.netlify.app/blog/social/" target="_blank" rel="noopener">Documentación</a>.</p>
+
+
+
+
+<h2 id="menus">Menus
+  <a href="#menus"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Tal vez, la parte más importante serán nuestras secciones. Estás también aparecen el archivo <code>config.toml</code>, cada sección que coloquemos debe tener una carpeta dentro de la carpeta <code>content</code>. Y cada carpeta de sección debe contener un archivo <code>_index.md</code> que será la configuración inicial de dicha sección.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[menu]
+</span></span><span style="display:flex;"><span>  [[menu.header]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#d14">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#d14">&#34;About&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#d14">&#34;/about/&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  [[menu.header]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
+</span></span></code></pre></div><p>Vamos a desglozar ese código:</p>
+<ul>
+<li>
+<p><code>name</code>: es el nombre de la sección principal.</p>
+</li>
+<li>
+<p><code>title</code>: es algún título para dicha sección, el cual no será visible pero es usado para accesibilidad, saldrá un mensaje emergente cuando pasemos el mouse por ahí.</p>
+</li>
+<li>
+<p><code>url</code>: es el link a la carpeta, aquí debe ir el nombre de la carpeta que contendrá esa sección.</p>
+</li>
+<li>
+<p><code>weight</code>: El orden de la sección, en este caso 1 indica que es la primera sección.</p>
+</li>
+</ul>
+<p>Y vamos a repetir ese código tantas veces como sea necesario, es decir, tantas veces como secciones tengamos en nuestra página.</p>
+<p>Una vez realizado esto, vamos a ir de nuevo a donde configuramos los primeros parámetros de Apero, para cambiar las secciones principales.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  orgName = <span style="color:#d14">&#34;RLadiesMorelia&#34;</span>
+</span></span><span style="display:flex;"><span>  orgLocal = <span style="color:#d14">&#34;Haydeé Peruyero&#34;</span>
+</span></span><span style="display:flex;"><span>  description = <span style="color:#d14">&#34;Una página de prueba de RLadies Morelia&#34;</span>
+</span></span><span style="display:flex;"><span>  favicon = <span style="color:#d14">&#34;/img/favicon.ico&#34;</span>
+</span></span><span style="display:flex;"><span>  logo = <span style="color:#d14">&#34;/img/logo-rladies.jpeg&#34;</span>
+</span></span><span style="display:flex;"><span>  mainSections = [<span style="color:#a61717;background-color:#e3d2d2">`</span><span style="color:#d14">&#34;about&#34;</span>, <span style="color:#d14">&#34;blog&#34;</span>, <span style="color:#d14">&#34;project&#34;</span>, <span style="color:#d14">&#34;talk&#34;</span>, <span style="color:#d14">&#34;other&#34;</span>]
+</span></span><span style="display:flex;"><span>  navallcaps = <span style="color:#000;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Default image for social sharing and search engines. </span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Place image file in `static` folder and specify image name here.</span>
+</span></span><span style="display:flex;"><span>  sharing_image = <span style="color:#d14">&#34;/img/papillons.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># Twitter username (without @). Used when a visitor shares your site on Twitter.</span>
+</span></span><span style="display:flex;"><span>  twitter = <span style="color:#d14">&#34;rladiesmorelia&#34;</span>
+</span></span></code></pre></div><p>También podemos configurar los pies de página en:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>  [[menu.footer]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#d14">&#34;License&#34;</span>
+</span></span><span style="display:flex;"><span>    title = <span style="color:#d14">&#34;License&#34;</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#d14">&#34;/license/&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#099">1</span>
+</span></span><span style="display:flex;"><span>  [[menu.footer]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
+</span></span></code></pre></div>
 
 
 
@@ -510,56 +684,19 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 </span></span><span style="display:flex;"><span>  headingFontFamily = <span style="color:#d14">&#34;serif&#34;</span>
 </span></span></code></pre></div><p>
 <a href="/learn/fonts/">Documentacón completa</a>.</p>
-
-
-
-
-<h2 id="social-icons">Social icons
-  <a href="#social-icons"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<p>Se pueden usar ambos Font Awesome y Academicons como link a sus redes sociales.</p>
-<p>En el archivo <code>config.toml</code> se encuentra en la sección:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
-</span></span><span style="display:flex;"><span>  <span style="color:#998;font-style:italic"># show/hide social icons in site header &amp; footer</span>
-</span></span><span style="display:flex;"><span>  socialInHeader = <span style="color:#000;font-weight:bold">false</span>
-</span></span><span style="display:flex;"><span>  socialInFooter = <span style="color:#000;font-weight:bold">false</span>
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  [[params.social]]
-</span></span><span style="display:flex;"><span>      icon      = <span style="color:#d14">&#34;github&#34;</span> <span style="color:#998;font-style:italic"># icon name without the &#39;fa-&#39;</span>
-</span></span><span style="display:flex;"><span>      icon_pack = <span style="color:#d14">&#34;fab&#34;</span>
-</span></span><span style="display:flex;"><span>      url       = <span style="color:#d14">&#34;https://github.com/apreshill/apero&#34;</span>
-</span></span><span style="display:flex;"><span>  [[params.social]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
-</span></span></code></pre></div><p>
-<a href="/learn/social/">Documentación</a>.</p>
-
-
-
-
-<h2 id="menus">Menus
-  <a href="#menus"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="currentColor"></path>
-      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
-    </svg></a>
-</h2>
-<p>Los menus/pestañas de nuestro sitio los configuramos en el archivo <code>config.toml</code> en la sección:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[menu]
-</span></span><span style="display:flex;"><span>  [[menu.header]]
-</span></span><span style="display:flex;"><span>    name = <span style="color:#d14">&#34;About&#34;</span>
-</span></span><span style="display:flex;"><span>    title = <span style="color:#d14">&#34;About Apéro&#34;</span>
-</span></span><span style="display:flex;"><span>    url = <span style="color:#d14">&#34;/about/&#34;</span>
-</span></span><span style="display:flex;"><span>    weight = <span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>  [[menu.header]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
-</span></span></code></pre></div><p>Y también para los pies de página:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>  [[menu.footer]]
-</span></span><span style="display:flex;"><span>    name = <span style="color:#d14">&#34;License&#34;</span>
-</span></span><span style="display:flex;"><span>    title = <span style="color:#d14">&#34;License&#34;</span>
-</span></span><span style="display:flex;"><span>    url = <span style="color:#d14">&#34;/license/&#34;</span>
-</span></span><span style="display:flex;"><span>    weight = <span style="color:#099">1</span>
-</span></span><span style="display:flex;"><span>  [[menu.footer]] <span style="color:#a61717;background-color:#e3d2d2">&lt;!</span>--lather, rinse, repeat--<span style="color:#a61717;background-color:#e3d2d2">&gt;</span>
+<p>Vamos a enviar todos estos cambios a GitHub para no arriesgarnos a que falle algo y poder recuperar alguna versión anterior.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#d14">&#34;Configuración de secciones y tema-colores&#34;</span>
+</span></span><span style="display:flex;"><span>git push
 </span></span></code></pre></div>
+
+
+
+<h1 id="4-configurar-secciones">4. Configurar secciones
+  <a href="#4-configurar-secciones"></a>
+</h1>
+<p><strong>Nota:</strong> Dentro de cada carpeta principal, se encuentra una imagen, si queremos reemplazarla, la imagen que subamos se debe llamar de esa forma, de lo contrario no lo reconocerá. Por ejemplo, en la carpeta <code>projects</code> hay varias subcarpetas, una por cada proyecto que vemos ahorita. Dentro de cada una de ellas existe una imagen que se llama featured. Si queremos reemplazar esa imagen, debemos subir una con ese mismo nombre.</p>
+
       </section>
       <footer class="post-footer">
         <div class="post-pagination dt w-100 mt4 mb2">
@@ -634,7 +771,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">6 minute read, 1119 words</dd>
+    <dd class="fw5 ml0">12 minute read, 2387 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">

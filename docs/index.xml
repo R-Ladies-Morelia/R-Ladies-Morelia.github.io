@@ -20,7 +20,7 @@
       <link>https://r-ladies-morelia.github.io/project/webpage/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
       <guid>https://r-ladies-morelia.github.io/project/webpage/</guid>
-      <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;También necesitaremos una cuenta de github y una forma de conectar RStudio con github.&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().&#xA;Y necesitamos saber un poquito de Markdown.</description>
+      <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;Nota: Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.&#xA;¿Cómo conectar GitHub con RStudio?&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().</description>
     </item>
     <item>
       <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
