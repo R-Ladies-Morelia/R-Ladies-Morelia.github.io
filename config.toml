@@ -68,12 +68,12 @@ enableEmoji = true
   headingFontFamily = "sans-serif"
 
   # Configuration of https://utteranc.es/ for comments
-  [params.utterances]
-    use_utterances = true
-    repo_name = "apreshill/apero"
-    issue_term = "pathname" # url, pathname, or title
-    theme = "boxy-light"
-    label = "comments :crystal_ball:"
+  #[params.utterances]
+  #  use_utterances = true
+  #  repo_name = "apreshill/apero"
+  #  issue_term = "pathname" # url, pathname, or title
+  #  theme = "boxy-light"
+  #  label = "comments :crystal_ball:"
 
   # Configuration of math rendering
   [params.math]

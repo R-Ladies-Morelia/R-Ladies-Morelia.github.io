@@ -2,7 +2,7 @@
 title: R-Ladies Blog
 description: |
   Aquí encontrarás....
-author: "Alguien de @rladies_morelia"
+author: "@rladies_morelia"
 show_post_thumbnail: true
 thumbnail_left: true # for list-sidebar only
 show_author_byline: true
@@ -19,20 +19,20 @@ sidebar:
     
     Check out the _index.md file in the /blog folder 
     to edit this content. 
-  author: "Alguien de @rladies_morelia"
+  author: "@rladies_morelia"
   text_link_label: Subscribete en Meetup
-  text_link_url: /index.xml
+  text_link_url: https://www.meetup.com/es-ES/rladies-morelia/
   categories_link: true
   series_link: true
   tags_link: true
-  show_sidebar_adunit: true # show ad container
+  show_sidebar_adunit: false # show ad container
 
 # set up common front matter for all pages inside blog/
 cascade:
-  author: "Alguien de @rladies_morelia"
+  author: "@rladies_morelia"
   show_author_byline: true
   show_post_date: true
-  show_comments: true # see site config to choose Disqus or Utterances
+  show_comments: false # see site config to choose Disqus or Utterances
   # for single-sidebar layout
   sidebar:
     text_link_label: View recent posts

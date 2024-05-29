@@ -563,4 +563,249 @@ git push
 
 **Nota:** Dentro de cada carpeta principal, se encuentra una imagen, si queremos reemplazarla, la imagen que subamos se debe llamar de esa forma, de lo contrario no lo reconocerá. Por ejemplo, en la carpeta `projects` hay varias subcarpetas, una por cada proyecto que vemos ahorita. Dentro de cada una de ellas existe una imagen que se llama featured. Si queremos reemplazar esa imagen, debemos subir una con ese mismo nombre.
 
+## Sección Blog
+
+Vamos a comenzar con alguna carpeta, digamos la que se llama `blog`. Vamos abrir (o crear) el archivo `_index.md` donde se encuentra la configuración inicial de cada sección principal.
+
+Cada sección del archivo define diferentes aspectos de la configuración del blog, incluyendo metadatos, opciones de diseño y contenido de la barra lateral.
+
+Vamos a desglosar cada parte:
+
+### Encabezado y Metadatos del Blog
+
+```yaml
+title: R-Ladies Blog
+description: |
+  Aquí encontrarás....
+author: "Alguien de @rladies_morelia"
+show_post_thumbnail: true
+thumbnail_left: true # for list-sidebar only
+show_author_byline: true
+show_post_date: true
+show_button_links: false
+# for listing page layout
+layout: list-sidebar # list, list-sidebar, list-grid
+```
+
+- `title`: Título del blog.
+- `description`: Descripción del blog, usando el símbolo `|` para permitir múltiples líneas.
+- `author`: Autor del blog.
+- `show_post_thumbnail`: Muestra la miniatura del post.
+- `thumbnail_left`: Indica si la miniatura debe aparecer a la izquierda en el diseño `list-sidebar`.
+- `show_author_byline`: Muestra el nombre del autor en los posts.
+- `show_post_date`: Muestra la fecha de publicación en los posts.
+- `show_button_links`: Controla si se muestran los enlaces de botones.
+- `layout`: Define el diseño de la página de listado de posts. Las opciones pueden ser `list`, `list-sidebar`, `list-grid`.
+
+### Configuración de la Barra Lateral (Sidebar)
+
+```yaml
+# for list-sidebar layout
+sidebar: 
+  title: Cosas interesantes
+  description: |
+    Aquí.....
+    
+    Check out the _index.md file in the /blog folder 
+    to edit this content. 
+  author: "Alguien de @rladies_morelia"
+  text_link_label: Subscribete en Meetup
+  text_link_url: /index.xml
+  categories_link: true
+  series_link: true
+  tags_link: true
+  show_sidebar_adunit: true # show ad container
+```
+
+- `title`: Título de la barra lateral.
+- `description`: Descripción de la barra lateral, usando `|` para múltiples líneas.
+- `author`: Autor de la barra lateral (puede ser el mismo o diferente del autor principal).
+- `text_link_label`: Etiqueta del enlace de texto en la barra lateral (por ejemplo, "Subscribe via RSS").
+- `text_link_url`: URL del enlace de texto.
+- `categories_link`: Muestra un enlace a las categorías.
+- `series_link`: Muestra un enlace a las series.
+- `tags_link`: Muestra un enlace a las etiquetas.
+- `show_sidebar_adunit`: Indica si se debe mostrar un contenedor de anuncios en la barra lateral.
+
+### Configuración Común para Todas las Páginas dentro de la Carpeta `blog/`
+
+```yaml
+# set up common front matter for all pages inside blog/
+cascade:
+  author: "Alguien de @rladies_morelia"
+  show_author_byline: true
+  show_post_date: true
+  show_comments: true # see site config to choose Disqus or Utterances
+  # for single-sidebar layout
+  sidebar:
+    text_link_label: View recent posts
+    text_link_url: /blog/
+    show_sidebar_adunit: false # show ad container
+```
+
+- `cascade`: Esta sección aplica configuraciones comunes a todas las páginas dentro de la carpeta `blog/`.
+  - `author`: Autor por defecto para todas las páginas en `blog/`.
+  - `show_author_byline`: Muestra el nombre del autor en los posts.
+  - `show_post_date`: Muestra la fecha de publicación en los posts.
+  - `show_comments`: Habilita los comentarios en los posts (el tipo de sistema de comentarios se configura en el archivo de configuración del sitio).
+  - `sidebar`: Configuración específica para la barra lateral en el diseño `single-sidebar`.
+    - `text_link_label`: Etiqueta del enlace de texto en la barra lateral (por ejemplo, "View recent posts").
+    - `text_link_url`: URL del enlace de texto.
+    - `show_sidebar_adunit`: Indica si se debe mostrar un contenedor de anuncios en la barra lateral.
+
+No olviden actualizar la imagen que aparece en esa carpeta y nombrarla `sidebar-listing`.
+
+### Primer entrada del blog
+
+Dentro de la carpeta blog, existen varias subcarpetas, podemos borrar todas y comenzar nuestra propia configuración o dejar alguna e ir modificandolas. 
+
+Creemos por ejemplo una carpeta llamada `encuentro`. Dentro de esa carpeta, vamos a dar click en `New Blank File`, seleccionamos `Text File` y nos pedira un nombre, lo guardamos como `index.md`. Esto nos abrira un nuevo archivo en blanco para comenzar a configurar nuestra primera entrada del blog.
+
+Este archivo YAML es parte de la "front matter" de una publicación en un generador de sitios estáticos como Hugo. La "front matter" se coloca al principio de un archivo de contenido (generalmente un archivo Markdown) y define metadatos y configuraciones específicas para esa página o publicación. Aquí hay una explicación detallada de cada campo:
+
+
+```yaml
+---
+title: "Título de la entrada del blog"
+```
+
+- `title`: El título de la publicación
+
+```yaml
+subtitle: "Algún subtítulo descriptivo...."
+```
+
+- `subtitle`: Un subtítulo que proporciona más información sobre el contenido de la publicación.
+
+```yaml
+excerpt: "Este es un preview del contenido"
+```
+
+- `excerpt`: Un extracto o resumen de la publicación. Este campo a menudo se utiliza en listados de publicaciones o vistas previas.
+
+```yaml
+date: 2024-05-31
+```
+
+- `date`: La fecha de publicación de la entrada, en formato `YYYY-MM-DD`.
+
+```yaml
+author: "Haydeé Peruyero"
+```
+
+- `author`: El autor de la publicación.
+
+```yaml
+draft: false
+```
+
+- `draft`: Un indicador booleano que determina si la publicación está en borrador (`true`) o lista para ser publicada (`false`).
+
+
+```yaml
+tags:
+  - blog
+```
+
+- `tags`: Una lista de etiquetas asociadas con la publicación. En este caso, solo hay una etiqueta: `blog`.
+
+```yaml
+categories:
+  - Theme Features
+```
+
+- `categories`: Una lista de categorías a las que pertenece la publicación. Aquí, la publicación pertenece a la categoría `Theme Features`.
+
+
+```yaml
+# layout options: single, single-sidebar
+layout: single
+---
+```
+
+- `layout`: Define el diseño de la publicación. Las opciones de diseño pueden incluir `single` (una sola columna) o `single-sidebar` (con una barra lateral). En este caso, se utiliza el diseño `single`.
+
+
+Después de los últimos tres `---`, comienza el contenido del post. El contenido se crea con formato Markdown.
+
+Para colocar título usamos `#`, para colocar imágenes usamos la sintaxis `![descripción imagen](nombre del archivo)`, la imagen se debe encontrar en la misma carpeta.
+
+### Otro tipo de entradas
+
+
+Otro tipo de configuración que pueden tener nuestros archivos es la siguiente:
+
+```yaml
+---
+title: "Web page"
+subtitle: "Testing"
+excerpt: "Aquí encontrarán la plática de como crear su sitio web"
+date: 2024-05-27
+date_end: "2024-06-01"
+featured: true
+show_post_time: false
+```
+- `date_end`: La fecha de finalización del evento, en formato `YYYY-MM-DD`. Esto es útil si la publicación describe un evento que dura varios días.
+
+- `show_post_time`: Un indicador booleano que determina si la hora de la publicación debe mostrarse (`true`) o no (`false`).
+
+```yaml
+event: "rstudio::global(2021)"
+event_url: https://global.rstudio.com
+```
+
+- `event`: El nombre del evento asociado con la publicación.
+- `event_url`: La URL del evento donde se puede obtener más información.
+
+```yaml
+author: "Haydeé Peruyero"
+location: "Morelia,  Michoacán"
+draft: false
+# layout options: single, single-sidebar
+layout: single
+categories:
+- workshop
+```
+Pueden incluir enlaces e iconos.
+
+```yaml
+links:
+- icon: door-open
+  icon_pack: fas
+  name: website
+  url: https://r-ladies-morelia.github.io/
+- icon: github
+  icon_pack: fab
+  name: code
+  url: https://github.com/R-Ladies-Morelia/R-Ladies-Morelia.github.io
+---
+```
+
+- `links`: Una lista de enlaces relacionados con la publicación.
+  - `icon`: El icono que se debe mostrar para el enlace (por ejemplo, `door-open`).
+  - `icon_pack`: El paquete de iconos al que pertenece el icono (por ejemplo, `fas` para Font Awesome Solid o `fab` para Font Awesome Brands).
+  - `name`: El nombre del enlace que se mostrará en el sitio (por ejemplo, `website` o `code`).
+  - `url`: La URL a la que apunta el enlace.
+
+
+
+# 5. Comentarios
+
+1) Una vez lanzado el sitio, es decir, cuando tenemos el preview, no hay que volver a lanzarlo, cada cambio que realicemos, al darle click guardar nos mostrará de inmediato como se ve y si algo falló. 
+
+2) Si por algún motivo algún cambio no se ve reflejado, en la consola podemos correr primero `blogdown::stop_server()` y después `blogdown:::serve_site()` para volver a previsualizarlo.
+
+3) Antes de hacer un commit con nuestros cambios, primero debemos "construir en sitio", para eso podemos realizarlo en la parte superior derecha, en la sección `Build` y depués en `Build Website` o directo en la consola con `blogdown::build_site()`. Esto no nos desplegará una previsualización, pero esta fue la que obtuvimos antes con `blogdown:::serve_site()`.
+
+4) Una vez construido el sitio, realizamos el commit y push con nuestros cambios en la terminal de RStudio:
+
+```bash
+git add .
+git commit -m "Mensaje referente a los cambios"
+git push
+```
+
+5) Si por algún motivo, vemos dentro de la carpeta docs carpetas de las secciones anteriores de la página de prueba, siempre podemos borrar esa carpeta, al lanzar el sitio o construirlo, esta carpeta se vuelve a generar y ya solo con lo que tenemos en nuestras secciones. Otra carpeta que suele aparecer, es una llamada `public`, podemos borrarla y no pasa nada.
+
+6) En la documentación oficial de Hugo-Apero, hay varios manuales sobre como realizar la personalización de diferentes secciones, [link](https://hugo-apero.netlify.app/blog/) y el su github, podríamos ver por ejemplo como personalizaron algunas secciones, por ejemplo la parte de este tutorial inicial donde aparecian unos paneles con `To do` y `Screnshots` es una configuración que aparece en el tutorial de Hugo-Apero-docs, [link](https://github.com/orgs/hugo-apero/repositories). Además, está un tutorial por [Alison Hill](https://www.apreshill.com/) donde tiene como configurar varias secciones de su página, [link](https://iyo-rstudio-global.netlify.app/collection/). En la mism página de [Alison Hill](https://www.apreshill.com/) pueden encontrar varios tutoriales muy interesantes sobre ciencia de datos y R.
 

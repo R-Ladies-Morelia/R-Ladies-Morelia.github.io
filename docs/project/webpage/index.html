@@ -55,7 +55,7 @@ Instalar blogdown: install.packages(&#34;blogdown&#34;)
 Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().">
   <meta itemprop="datePublished" content="2024-05-27T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-05-27T00:00:00+00:00">
-  <meta itemprop="wordCount" content="2387">
+  <meta itemprop="wordCount" content="3772">
   <meta itemprop="image" content="https://r-ladies-morelia.github.io/project/webpage/featured-hex.png">
   <meta itemprop="keywords" content="Tutorials">
   
@@ -697,6 +697,280 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 </h1>
 <p><strong>Nota:</strong> Dentro de cada carpeta principal, se encuentra una imagen, si queremos reemplazarla, la imagen que subamos se debe llamar de esa forma, de lo contrario no lo reconocerá. Por ejemplo, en la carpeta <code>projects</code> hay varias subcarpetas, una por cada proyecto que vemos ahorita. Dentro de cada una de ellas existe una imagen que se llama featured. Si queremos reemplazar esa imagen, debemos subir una con ese mismo nombre.</p>
 
+
+
+
+<h2 id="sección-blog">Sección Blog
+  <a href="#secci%c3%b3n-blog"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Vamos a comenzar con alguna carpeta, digamos la que se llama <code>blog</code>. Vamos abrir (o crear) el archivo <code>_index.md</code> donde se encuentra la configuración inicial de cada sección principal.</p>
+<p>Cada sección del archivo define diferentes aspectos de la configuración del blog, incluyendo metadatos, opciones de diseño y contenido de la barra lateral.</p>
+<p>Vamos a desglosar cada parte:</p>
+
+
+
+
+<h3 id="encabezado-y-metadatos-del-blog">Encabezado y Metadatos del Blog
+  <a href="#encabezado-y-metadatos-del-blog"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">title</span>:<span style="color:#bbb"> </span>R-Ladies Blog<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">description</span>:<span style="color:#bbb"> </span>|<span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">  Aquí encontrarás....</span><span style="color:#bbb">  
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">author</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Alguien de @rladies_morelia&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">show_post_thumbnail</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">thumbnail_left</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb"> </span><span style="color:#998;font-style:italic"># for list-sidebar only</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">show_author_byline</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">show_post_date</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">show_button_links</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic"># for listing page layout</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">layout</span>:<span style="color:#bbb"> </span>list-sidebar<span style="color:#bbb"> </span><span style="color:#998;font-style:italic"># list, list-sidebar, list-grid</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>title</code>: Título del blog.</li>
+<li><code>description</code>: Descripción del blog, usando el símbolo <code>|</code> para permitir múltiples líneas.</li>
+<li><code>author</code>: Autor del blog.</li>
+<li><code>show_post_thumbnail</code>: Muestra la miniatura del post.</li>
+<li><code>thumbnail_left</code>: Indica si la miniatura debe aparecer a la izquierda en el diseño <code>list-sidebar</code>.</li>
+<li><code>show_author_byline</code>: Muestra el nombre del autor en los posts.</li>
+<li><code>show_post_date</code>: Muestra la fecha de publicación en los posts.</li>
+<li><code>show_button_links</code>: Controla si se muestran los enlaces de botones.</li>
+<li><code>layout</code>: Define el diseño de la página de listado de posts. Las opciones pueden ser <code>list</code>, <code>list-sidebar</code>, <code>list-grid</code>.</li>
+</ul>
+
+
+
+
+<h3 id="configuración-de-la-barra-lateral-sidebar">Configuración de la Barra Lateral (Sidebar)
+  <a href="#configuraci%c3%b3n-de-la-barra-lateral-sidebar"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># for list-sidebar layout</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">sidebar</span>:<span style="color:#bbb"> 
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">title</span>:<span style="color:#bbb"> </span>Cosas interesantes<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">description</span>:<span style="color:#bbb"> </span>|<span style="color:#d14">
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Aquí.....
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    Check out the _index.md file in the /blog folder 
+</span></span></span><span style="display:flex;"><span><span style="color:#d14">    to edit this content. </span><span style="color:#bbb">    
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">author</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Alguien de @rladies_morelia&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">text_link_label</span>:<span style="color:#bbb"> </span>Subscribete en Meetup<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">text_link_url</span>:<span style="color:#bbb"> </span>/index.xml<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">categories_link</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">series_link</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">tags_link</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">show_sidebar_adunit</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb"> </span><span style="color:#998;font-style:italic"># show ad container</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>title</code>: Título de la barra lateral.</li>
+<li><code>description</code>: Descripción de la barra lateral, usando <code>|</code> para múltiples líneas.</li>
+<li><code>author</code>: Autor de la barra lateral (puede ser el mismo o diferente del autor principal).</li>
+<li><code>text_link_label</code>: Etiqueta del enlace de texto en la barra lateral (por ejemplo, &ldquo;Subscribe via RSS&rdquo;).</li>
+<li><code>text_link_url</code>: URL del enlace de texto.</li>
+<li><code>categories_link</code>: Muestra un enlace a las categorías.</li>
+<li><code>series_link</code>: Muestra un enlace a las series.</li>
+<li><code>tags_link</code>: Muestra un enlace a las etiquetas.</li>
+<li><code>show_sidebar_adunit</code>: Indica si se debe mostrar un contenedor de anuncios en la barra lateral.</li>
+</ul>
+
+
+
+
+<h3 id="configuración-común-para-todas-las-páginas-dentro-de-la-carpeta-blog">Configuración Común para Todas las Páginas dentro de la Carpeta <code>blog/</code>
+  <a href="#configuraci%c3%b3n-com%c3%ban-para-todas-las-p%c3%a1ginas-dentro-de-la-carpeta-blog"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># set up common front matter for all pages inside blog/</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">cascade</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">author</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Alguien de @rladies_morelia&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">show_author_byline</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">show_post_date</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">show_comments</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb"> </span><span style="color:#998;font-style:italic"># see site config to choose Disqus or Utterances</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#998;font-style:italic"># for single-sidebar layout</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">sidebar</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">text_link_label</span>:<span style="color:#bbb"> </span>View recent posts<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">text_link_url</span>:<span style="color:#bbb"> </span>/blog/<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">show_sidebar_adunit</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb"> </span><span style="color:#998;font-style:italic"># show ad container</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>cascade</code>: Esta sección aplica configuraciones comunes a todas las páginas dentro de la carpeta <code>blog/</code>.
+<ul>
+<li><code>author</code>: Autor por defecto para todas las páginas en <code>blog/</code>.</li>
+<li><code>show_author_byline</code>: Muestra el nombre del autor en los posts.</li>
+<li><code>show_post_date</code>: Muestra la fecha de publicación en los posts.</li>
+<li><code>show_comments</code>: Habilita los comentarios en los posts (el tipo de sistema de comentarios se configura en el archivo de configuración del sitio).</li>
+<li><code>sidebar</code>: Configuración específica para la barra lateral en el diseño <code>single-sidebar</code>.
+<ul>
+<li><code>text_link_label</code>: Etiqueta del enlace de texto en la barra lateral (por ejemplo, &ldquo;View recent posts&rdquo;).</li>
+<li><code>text_link_url</code>: URL del enlace de texto.</li>
+<li><code>show_sidebar_adunit</code>: Indica si se debe mostrar un contenedor de anuncios en la barra lateral.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>No olviden actualizar la imagen que aparece en esa carpeta y nombrarla <code>sidebar-listing</code>.</p>
+
+
+
+
+<h3 id="primer-entrada-del-blog">Primer entrada del blog
+  <a href="#primer-entrada-del-blog"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Dentro de la carpeta blog, existen varias subcarpetas, podemos borrar todas y comenzar nuestra propia configuración o dejar alguna e ir modificandolas.</p>
+<p>Creemos por ejemplo una carpeta llamada <code>encuentro</code>. Dentro de esa carpeta, vamos a dar click en <code>New Blank File</code>, seleccionamos <code>Text File</code> y nos pedira un nombre, lo guardamos como <code>index.md</code>. Esto nos abrira un nuevo archivo en blanco para comenzar a configurar nuestra primera entrada del blog.</p>
+<p>Este archivo YAML es parte de la &ldquo;front matter&rdquo; de una publicación en un generador de sitios estáticos como Hugo. La &ldquo;front matter&rdquo; se coloca al principio de un archivo de contenido (generalmente un archivo Markdown) y define metadatos y configuraciones específicas para esa página o publicación. Aquí hay una explicación detallada de cada campo:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">title</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Título de la entrada del blog&#34;</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>title</code>: El título de la publicación</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">subtitle</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Algún subtítulo descriptivo....&#34;</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>subtitle</code>: Un subtítulo que proporciona más información sobre el contenido de la publicación.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">excerpt</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Este es un preview del contenido&#34;</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>excerpt</code>: Un extracto o resumen de la publicación. Este campo a menudo se utiliza en listados de publicaciones o vistas previas.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">date</span>:<span style="color:#bbb"> </span>2024-05-31<span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>date</code>: La fecha de publicación de la entrada, en formato <code>YYYY-MM-DD</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">author</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Haydeé Peruyero&#34;</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>author</code>: El autor de la publicación.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">draft</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>draft</code>: Un indicador booleano que determina si la publicación está en borrador (<code>true</code>) o lista para ser publicada (<code>false</code>).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">tags</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>- blog<span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>tags</code>: Una lista de etiquetas asociadas con la publicación. En este caso, solo hay una etiqueta: <code>blog</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">categories</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>- Theme Features<span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>categories</code>: Una lista de categorías a las que pertenece la publicación. Aquí, la publicación pertenece a la categoría <code>Theme Features</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># layout options: single, single-sidebar</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">layout</span>:<span style="color:#bbb"> </span>single<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>layout</code>: Define el diseño de la publicación. Las opciones de diseño pueden incluir <code>single</code> (una sola columna) o <code>single-sidebar</code> (con una barra lateral). En este caso, se utiliza el diseño <code>single</code>.</li>
+</ul>
+<p>Después de los últimos tres <code>---</code>, comienza el contenido del post. El contenido se crea con formato Markdown.</p>
+<p>Para colocar título usamos <code>#</code>, para colocar imágenes usamos la sintaxis <code>![descripción imagen](nombre del archivo)</code>, la imagen se debe encontrar en la misma carpeta.</p>
+
+
+
+
+<h3 id="otro-tipo-de-entradas">Otro tipo de entradas
+  <a href="#otro-tipo-de-entradas"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Otro tipo de configuración que pueden tener nuestros archivos es la siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">title</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Web page&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">subtitle</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Testing&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">excerpt</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Aquí encontrarán la plática de como crear su sitio web&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">date</span>:<span style="color:#bbb"> </span>2024-05-27<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">date_end</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;2024-06-01&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">featured</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">show_post_time</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li>
+<p><code>date_end</code>: La fecha de finalización del evento, en formato <code>YYYY-MM-DD</code>. Esto es útil si la publicación describe un evento que dura varios días.</p>
+</li>
+<li>
+<p><code>show_post_time</code>: Un indicador booleano que determina si la hora de la publicación debe mostrarse (<code>true</code>) o no (<code>false</code>).</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">event</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;rstudio::global(2021)&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">event_url</span>:<span style="color:#bbb"> </span>https://global.rstudio.com<span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>event</code>: El nombre del evento asociado con la publicación.</li>
+<li><code>event_url</code>: La URL del evento donde se puede obtener más información.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">author</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Haydeé Peruyero&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">location</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;Morelia,  Michoacán&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">draft</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#998;font-style:italic"># layout options: single, single-sidebar</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">layout</span>:<span style="color:#bbb"> </span>single<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">categories</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- workshop<span style="color:#bbb">
+</span></span></span></code></pre></div><p>Pueden incluir enlaces e iconos.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">links</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- <span style="color:#000080">icon</span>:<span style="color:#bbb"> </span>door-open<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">icon_pack</span>:<span style="color:#bbb"> </span>fas<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">name</span>:<span style="color:#bbb"> </span>website<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">url</span>:<span style="color:#bbb"> </span>https://r-ladies-morelia.github.io/<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- <span style="color:#000080">icon</span>:<span style="color:#bbb"> </span>github<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">icon_pack</span>:<span style="color:#bbb"> </span>fab<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">name</span>:<span style="color:#bbb"> </span>code<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">url</span>:<span style="color:#bbb"> </span>https://github.com/R-Ladies-Morelia/R-Ladies-Morelia.github.io<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span></code></pre></div><ul>
+<li><code>links</code>: Una lista de enlaces relacionados con la publicación.
+<ul>
+<li><code>icon</code>: El icono que se debe mostrar para el enlace (por ejemplo, <code>door-open</code>).</li>
+<li><code>icon_pack</code>: El paquete de iconos al que pertenece el icono (por ejemplo, <code>fas</code> para Font Awesome Solid o <code>fab</code> para Font Awesome Brands).</li>
+<li><code>name</code>: El nombre del enlace que se mostrará en el sitio (por ejemplo, <code>website</code> o <code>code</code>).</li>
+<li><code>url</code>: La URL a la que apunta el enlace.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<h1 id="5-comentarios">5. Comentarios
+  <a href="#5-comentarios"></a>
+</h1>
+<ol>
+<li>
+<p>Una vez lanzado el sitio, es decir, cuando tenemos el preview, no hay que volver a lanzarlo, cada cambio que realicemos, al darle click guardar nos mostrará de inmediato como se ve y si algo falló.</p>
+</li>
+<li>
+<p>Si por algún motivo algún cambio no se ve reflejado, en la consola podemos correr primero <code>blogdown::stop_server()</code> y después <code>blogdown:::serve_site()</code> para volver a previsualizarlo.</p>
+</li>
+<li>
+<p>Antes de hacer un commit con nuestros cambios, primero debemos &ldquo;construir en sitio&rdquo;, para eso podemos realizarlo en la parte superior derecha, en la sección <code>Build</code> y depués en <code>Build Website</code> o directo en la consola con <code>blogdown::build_site()</code>. Esto no nos desplegará una previsualización, pero esta fue la que obtuvimos antes con <code>blogdown:::serve_site()</code>.</p>
+</li>
+<li>
+<p>Una vez construido el sitio, realizamos el commit y push con nuestros cambios en la terminal de RStudio:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#d14">&#34;Mensaje referente a los cambios&#34;</span>
+</span></span><span style="display:flex;"><span>git push
+</span></span></code></pre></div><ol start="5">
+<li>
+<p>Si por algún motivo, vemos dentro de la carpeta docs carpetas de las secciones anteriores de la página de prueba, siempre podemos borrar esa carpeta, al lanzar el sitio o construirlo, esta carpeta se vuelve a generar y ya solo con lo que tenemos en nuestras secciones. Otra carpeta que suele aparecer, es una llamada <code>public</code>, podemos borrarla y no pasa nada.</p>
+</li>
+<li>
+<p>En la documentación oficial de Hugo-Apero, hay varios manuales sobre como realizar la personalización de diferentes secciones, 
+<a href="https://hugo-apero.netlify.app/blog/" target="_blank" rel="noopener">link</a> y el su github, podríamos ver por ejemplo como personalizaron algunas secciones, por ejemplo la parte de este tutorial inicial donde aparecian unos paneles con <code>To do</code> y <code>Screnshots</code> es una configuración que aparece en el tutorial de Hugo-Apero-docs, 
+<a href="https://github.com/orgs/hugo-apero/repositories" target="_blank" rel="noopener">link</a>. Además, está un tutorial por 
+<a href="https://www.apreshill.com/" target="_blank" rel="noopener">Alison Hill</a> donde tiene como configurar varias secciones de su página, 
+<a href="https://iyo-rstudio-global.netlify.app/collection/" target="_blank" rel="noopener">link</a>. En la mism página de 
+<a href="https://www.apreshill.com/" target="_blank" rel="noopener">Alison Hill</a> pueden encontrar varios tutoriales muy interesantes sobre ciencia de datos y R.</p>
+</li>
+</ol>
+
       </section>
       <footer class="post-footer">
         <div class="post-pagination dt w-100 mt4 mb2">
@@ -740,7 +1014,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 
   <h1 class="f3">Barra lateral</h1>
   <p class="f6 lh-copy measure">Esto se puede cambiar en el _index.md file!</p>
-  <p class="f7 measure lh-copy i mh0-l">Written by By @rladies_morelia</p>
+  <p class="f7 measure lh-copy i mh0-l">Written by @rladies_morelia</p>
 
 
   
@@ -757,12 +1031,6 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
 </div>
 
 
-<div class="ad-unit pa4">
-  
-  <p class="f7 measure-narrow lh-copy mv0 pt5"><span class="b ttu db">Made by Formspree</span><span><a href="https://formspree.io" target="_blank">Formspree is a form backend, API and email  service for HTML forms</a>. It is the simplest way to collect form submissions on your static website.</span></p>
-  
-</div>
-
   
   <details open class="f6 fw7 input-reset">
   <dl class="f6 lh-copy">
@@ -771,7 +1039,7 @@ Y presionar en <code>Create Project</code> para que se cree el nuevo proyecto.</
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">12 minute read, 2387 words</dd>
+    <dd class="fw5 ml0">18 minute read, 3772 words</dd>
   </dl>
   
   <dl class="f6 lh-copy">

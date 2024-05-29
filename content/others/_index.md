@@ -1,6 +1,6 @@
 ---
 title: "Otros recursos"
-author: "Alguien de @rladies_morelia"
+author: "@rladies_morelia"
 description: |
   Aquí encontrarás otros recursos....
 show_post_thumbnail: yes
@@ -13,15 +13,15 @@ sidebar:
   title: Cosas interesantes
   description: "Aquí.....\n\nCheck out the _index.md file in the /blog folder \nto
     edit this content. \n"
-  author: Alguien de @rladies_morelia
+  author: "@rladies_morelia"
   text_link_label: Subscribete en Meetup
   text_link_url: /index.xml
   categories_link: yes
   series_link: yes
   tags_link: yes
-  show_sidebar_adunit: yes
+  show_sidebar_adunit: no
 cascade:
-  author: Alguien de @rladies_morelia
+  author: "@rladies_morelia"
   show_author_byline: yes
   show_post_date: yes
   show_comments: yes

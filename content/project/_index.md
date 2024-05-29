@@ -14,7 +14,7 @@ sidebar:
   title: Barra lateral
   description: |
     Esto se puede cambiar en el _index.md file!
-  author: "By @rladies_morelia"
+  author: "@rladies_morelia"
   text_link_label: ""
   text_link_url: ""
   show_sidebar_adunit: false # show ad container
@@ -28,7 +28,7 @@ cascade:
   sidebar:
     text_link_label: View all projects
     text_link_url: /project/
-    show_sidebar_adunit: true # show ad container
+    show_sidebar_adunit: false # show ad container
 ---
 
 ** No content for the project index. This file provides front matter for the blog including the layout and boolean options. **
