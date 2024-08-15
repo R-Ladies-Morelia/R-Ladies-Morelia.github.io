@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on R-Ladies Morelia</title>
-    <link>https://r-ladies-morelia.github.io/categories/r/</link>
+    <link>http://localhost:4321/categories/r/</link>
     <description>Recent content in R on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://r-ladies-morelia.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4321/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crea tu página web</title>
-      <link>https://r-ladies-morelia.github.io/project/webpage/</link>
+      <link>http://localhost:4321/project/webpage/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://r-ladies-morelia.github.io/project/webpage/</guid>
+      <guid>http://localhost:4321/project/webpage/</guid>
       <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;Nota: Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.&#xA;¿Cómo conectar GitHub con RStudio?&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().</description>
     </item>
     <item>
       <title>Presentaciones con Xaringan y Quarto</title>
-      <link>https://r-ladies-morelia.github.io/project/xaringan/</link>
+      <link>http://localhost:4321/project/xaringan/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://r-ladies-morelia.github.io/project/xaringan/</guid>
+      <guid>http://localhost:4321/project/xaringan/</guid>
       <description>En este tutorial presentamos un ejemplo de como crear presentaciones con Xaringan y Quarto&#xD;En la siguiente liga se encuentra el tutorial para crear su presentación con Xaringan y Quarto:&#xA;Tutorial&#xA;Un ejemplo de presentación con Xaringan&#xA;Un ejemplo de presentación con Quarto&#xA;GitHub con todo el material y la platilla con tema de RLadies</description>
     </item>
   </channel>

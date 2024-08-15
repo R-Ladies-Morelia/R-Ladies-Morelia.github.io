@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nosotras on R-Ladies Morelia</title>
+    <link>http://localhost:4321/tags/nosotras/</link>
+    <description>Recent content in Nosotras on R-Ladies Morelia</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:4321/tags/nosotras/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Haydeé Peruyero</title>
+      <link>http://localhost:4321/integrantes/haydee/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/integrantes/haydee/</guid>
+      <description>Postdoctoral Research at Center of Sciences Mathematics - UNAM | Topological and Geometric Data Analysis | Bioinformatics | Geometric Group Theory | Global Riemannian Geometry | Quantum Geometry and Topology | Member of R-Ladies</description>
+    </item>
+    <item>
+      <title>Dra. Evelia Coss</title>
+      <link>http://localhost:4321/integrantes/evelia/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/integrantes/evelia/</guid>
+      <description>Posdoctoral Research Associate | Bioinformation | lncRNAs | autoimmune diseases | Evolution | gene regulation | Member R-Ladies, LupusRGMX, Project JAGUAR</description>
+    </item>
+  </channel>
+</rss>

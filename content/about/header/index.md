@@ -7,4 +7,4 @@ headline: |
 ---
 
 <!-- this is a subheadline -->
-En esta página encontrarás material de las sesiones de R-Ladies Morelia.
+Bienvenidas a R-ladies capítulo Morelia. Solemos tener una reunión híbrida al mes para aprender R. Eres bienvenida a aprender. En esta página encontrarás material de las sesiones de R-Ladies Morelia.

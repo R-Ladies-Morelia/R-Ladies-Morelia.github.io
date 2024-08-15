@@ -1,12 +1,11 @@
 ---
 ## Configure page content in wide column
-title: "De que se trata?" # leave blank to exclude
+title: "¿De qué se trata R-Ladies?" # leave blank to exclude
 number_featured: 1 # pulling from mainSections in config.toml
 use_featured: false # if false, use most recent by date
 number_categories: 3 # set to zero to exclude
 show_intro: true
 intro: |
-  Bienvenidas a R-ladies capítulo Morelia. Solemos tener una reunión híbrida al mes para aprender R. Eres bienvenida a aprender.
   
   This is a local chapter of R-Ladies Global (https://www.rladies.org), an organization that promotes gender diversity in the R community worldwide. We meetup in person or virtually to learn about the R programming language, algorithms and advanced tools.
   

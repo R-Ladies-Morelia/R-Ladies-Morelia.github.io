@@ -1,0 +1,8 @@
+- name: "Evelia"
+  title: "Desarrollador"
+  photo: "/images/autores/EveliaLorenaCossNavarrete.jpg"
+  social:
+    github: "https://github.com/R-Ladies-Morelia"
+  description: "Una breve descripción del Autor Uno."
+  link: "content/integrantes/evelia/"
+
