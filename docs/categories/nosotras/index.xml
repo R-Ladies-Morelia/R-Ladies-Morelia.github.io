@@ -2,25 +2,158 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nosotras on R-Ladies Morelia</title>
-    <link>http://localhost:4321/categories/nosotras/</link>
+    <link>https://r-ladies-morelia.github.io/categories/nosotras/</link>
     <description>Recent content in Nosotras on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/categories/nosotras/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r-ladies-morelia.github.io/categories/nosotras/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nelly Sélem Mojica</title>
+      <link>https://r-ladies-morelia.github.io/project/nelly/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/nelly/</guid>
+      <description>Nelly Sélem-Mojica Researcher | Metagenomics | Natural Products | Bacterial Genomics| rladies | Wikipedia</description>
+    </item>
+    <item>
+      <title>M en C Claudia Zirión Martínez</title>
+      <link>https://r-ladies-morelia.github.io/project/claudia/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/claudia/</guid>
+      <description>Bioinformatician | Natural genomic variation | Fungi</description>
+    </item>
     <item>
       <title>Haydeé Peruyero</title>
-      <link>http://localhost:4321/integrantes/haydee/</link>
+      <link>https://r-ladies-morelia.github.io/project/haydee/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/integrantes/haydee/</guid>
+      <guid>https://r-ladies-morelia.github.io/project/haydee/</guid>
       <description>Postdoctoral Research at Center of Sciences Mathematics - UNAM | Topological and Geometric Data Analysis | Bioinformatics | Geometric Group Theory | Global Riemannian Geometry | Quantum Geometry and Topology | Member of R-Ladies</description>
     </item>
     <item>
       <title>Dra. Evelia Coss</title>
-      <link>http://localhost:4321/integrantes/evelia/</link>
+      <link>https://r-ladies-morelia.github.io/project/evelia/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/integrantes/evelia/</guid>
+      <guid>https://r-ladies-morelia.github.io/project/evelia/</guid>
       <description>Posdoctoral Research Associate | Bioinformation | lncRNAs | autoimmune diseases | Evolution | gene regulation | Member R-Ladies, LupusRGMX, Project JAGUAR</description>
+    </item>
+    <item>
+      <title>Goretty Nayeli Mendoza Juárez</title>
+      <link>https://r-ladies-morelia.github.io/project/gorety/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/gorety/</guid>
+      <description>Goretty Nayeli Mendoza Juárez. PhDStudent | MicrobialEcology | EndophyticFungi | Bioinformatics | MolecularBiology | R-Ladies Mexico member</description>
+    </item>
+    <item>
+      <title>Dra. Karina Verdel Aranda </title>
+      <link>https://r-ladies-morelia.github.io/project/karinav/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/karinav/</guid>
+      <description>Docente e Investigadora| Microbiología Aplicada| Genómica de recursos microbianos del Trópico| Laboratorio de Instrumentación y equipo TecNM campus Chiná</description>
+    </item>
+    <item>
+      <title>L. Quetzally Medina Velázquez </title>
+      <link>https://r-ladies-morelia.github.io/project/quetzally/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/quetzally/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>María Fernanda Cidel Rocasalvo</title>
+      <link>https://r-ladies-morelia.github.io/project/fernandacidel/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/fernandacidel/</guid>
+      <description>Licenciatura | Ecology | Bioinformatic | Phylogeography |</description>
+    </item>
+    <item>
+      <title>Liz Aleida Urióstegui Alejo</title>
+      <link>https://r-ladies-morelia.github.io/project/lizaleida/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/lizaleida/</guid>
+      <description>Estudiante de Doctorado | Microbiota | Bioestadística | Bioinformática | Miembro de R-Ladies</description>
+    </item>
+    <item>
+      <title>Laura Judith Giraldo Kalil (Doctorado)</title>
+      <link>https://r-ladies-morelia.github.io/project/laurajudith/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/laurajudith/</guid>
+      <description>Ecología evolutiva | Ecología funcional de plantas | Interacciones planta insecto | Botánica | Genética cuantitativa | Multilingüismo en la ciencia | R-ladies Morelia | Ilustración científica</description>
+    </item>
+    <item>
+      <title>Lic. en Matemáticas Mariel Guadalupe Gutiérrez Chaveste</title>
+      <link>https://r-ladies-morelia.github.io/project/marielg/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/marielg/</guid>
+      <description>Master&amp;rsquo;s degree student | Mathematics | Biomathematics | Data analysis | Data science | Web developing | Member R-Ladies</description>
+    </item>
+    <item>
+      <title>Erika Viridiana Cruz Bonilla</title>
+      <link>https://r-ladies-morelia.github.io/project/erikav/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/erikav/</guid>
+      <description>Aging genetics| Systems biology| Complex networks| Metagenomics</description>
+    </item>
+    <item>
+      <title>M.C. María Angeles Cárdenas Alvarado</title>
+      <link>https://r-ladies-morelia.github.io/project/mariaangeles/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariaangeles/</guid>
+      <description>Estudiante de Doctorado. Ecología Molecular. Arrecifes Coralinos. Ecología marina.</description>
+    </item>
+    <item>
+      <title>Amairani Cancino Bello </title>
+      <link>https://r-ladies-morelia.github.io/project/amairani/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/amairani/</guid>
+      <description>Estudiante de Doctorado | Microbiota | Bioestadística | Bioinformática | Miembro de R-Ladies</description>
+    </item>
+    <item>
+      <title>Dra. Anahi Aguilera</title>
+      <link>https://r-ladies-morelia.github.io/project/anahiaguilera/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/anahiaguilera/</guid>
+      <description>Posdoctoral researcher, environmental scientist, risk assessment, heavy metal pollution, environmental health, pollution assessment</description>
+    </item>
+    <item>
+      <title>Mayra del Carmen Fragoso Medina </title>
+      <link>https://r-ladies-morelia.github.io/project/mayrafragoso/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mayrafragoso/</guid>
+      <description>Manejo integral de Ecosistemas - Sistemas Socioecológicos - Investigación Acción - Interdisciplina - R ladies</description>
+    </item>
+    <item>
+      <title>Evelin Karina Buitrago Fernandez </title>
+      <link>https://r-ladies-morelia.github.io/project/evelinkarina/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/evelinkarina/</guid>
+      <description>Estudiante de maestría en ecología, metagenomica, bioinformática</description>
+    </item>
+    <item>
+      <title>Diana Berenice Ramírez Pineda</title>
+      <link>https://r-ladies-morelia.github.io/project/dianaberenice/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/dianaberenice/</guid>
+      <description>Estudiante de egresado no titulado de la licenciatura en ciencias genómicas campus Cuernavaca | Parkinson | Miembro de Mex-PD | Identificación de variantes genéticas</description>
+    </item>
+    <item>
+      <title>María José Palma Martínez</title>
+      <link>https://r-ladies-morelia.github.io/project/mariajosep/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariajosep/</guid>
+      <description>PhD student | Human Genetics | Member R-ladies</description>
+    </item>
+    <item>
+      <title>Maria Fernanda Miron Toruno</title>
+      <link>https://r-ladies-morelia.github.io/project/mariafernanda/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariafernanda/</guid>
+      <description>PhD student | Bioinformatics | PopGen | Evolution | Epigenomics</description>
+    </item>
+    <item>
+      <title>Dra. Aline Pingarroni</title>
+      <link>https://r-ladies-morelia.github.io/project/alinep/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/alinep/</guid>
+      <description>Professor Associate UNAMI Social-Ecological SystemsI Ecosystem Services AssessmentI Landscape EcologyI Biodiversity ConservationI Member, LA-PECS, ESP, R-Ladies</description>
     </item>
   </channel>
 </rss>

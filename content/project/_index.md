@@ -1,7 +1,7 @@
 ---
-title: Nuestros proyectos
-description: "Un lugar donde encontrarás los proyectos de R-Ladies Morelia."
-author: "By @rladies_morelia"
+title: Nosotras
+description: "Integrantes de la comunidad R-Ladies Morelia."
+author: "By @haydeeperuyero"
 show_post_thumbnail: true
 show_author_byline: true
 show_post_date: false

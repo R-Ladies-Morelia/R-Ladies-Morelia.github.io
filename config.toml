@@ -97,7 +97,7 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://www.instagram.com/rladies_morelia?igsh=d3dhaWJ6OGZsN2p3"
   [[params.social]]
-      icon      = "twitter" # icon name without the 'fa-'
+      icon      = "x-twitter" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://x.com/rladies_morelia?s=11"
   #[[params.social]]
@@ -129,7 +129,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Nosotras"
     title = "Nosotras"
-    url = "/integrantes/"
+    url = "/project/"
     weight = 2  
   [[menu.header]]
     name = "Blog"
@@ -139,7 +139,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Projects"
     title = "Project Portfolio"
-    url = "/project/"
+    url = "/learn/"
     weight = 4
   [[menu.header]]
     name = "Talks"

@@ -2,94 +2,227 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R-Ladies Morelia</title>
-    <link>http://localhost:4321/</link>
+    <link>https://r-ladies-morelia.github.io/</link>
     <description>Recent content on R-Ladies Morelia</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://r-ladies-morelia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nelly Sélem Mojica</title>
+      <link>https://r-ladies-morelia.github.io/project/nelly/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/nelly/</guid>
+      <description>Nelly Sélem-Mojica Researcher | Metagenomics | Natural Products | Bacterial Genomics| rladies | Wikipedia</description>
+    </item>
+    <item>
+      <title>M en C Claudia Zirión Martínez</title>
+      <link>https://r-ladies-morelia.github.io/project/claudia/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/claudia/</guid>
+      <description>Bioinformatician | Natural genomic variation | Fungi</description>
+    </item>
     <item>
       <title>Haydeé Peruyero</title>
-      <link>http://localhost:4321/integrantes/haydee/</link>
+      <link>https://r-ladies-morelia.github.io/project/haydee/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/integrantes/haydee/</guid>
+      <guid>https://r-ladies-morelia.github.io/project/haydee/</guid>
       <description>Postdoctoral Research at Center of Sciences Mathematics - UNAM | Topological and Geometric Data Analysis | Bioinformatics | Geometric Group Theory | Global Riemannian Geometry | Quantum Geometry and Topology | Member of R-Ladies</description>
     </item>
     <item>
       <title>Dra. Evelia Coss</title>
-      <link>http://localhost:4321/integrantes/evelia/</link>
+      <link>https://r-ladies-morelia.github.io/project/evelia/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/integrantes/evelia/</guid>
+      <guid>https://r-ladies-morelia.github.io/project/evelia/</guid>
       <description>Posdoctoral Research Associate | Bioinformation | lncRNAs | autoimmune diseases | Evolution | gene regulation | Member R-Ladies, LupusRGMX, Project JAGUAR</description>
     </item>
     <item>
+      <title>Goretty Nayeli Mendoza Juárez</title>
+      <link>https://r-ladies-morelia.github.io/project/gorety/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/gorety/</guid>
+      <description>Goretty Nayeli Mendoza Juárez. PhDStudent | MicrobialEcology | EndophyticFungi | Bioinformatics | MolecularBiology | R-Ladies Mexico member</description>
+    </item>
+    <item>
+      <title>Dra. Karina Verdel Aranda </title>
+      <link>https://r-ladies-morelia.github.io/project/karinav/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/karinav/</guid>
+      <description>Docente e Investigadora| Microbiología Aplicada| Genómica de recursos microbianos del Trópico| Laboratorio de Instrumentación y equipo TecNM campus Chiná</description>
+    </item>
+    <item>
+      <title>L. Quetzally Medina Velázquez </title>
+      <link>https://r-ladies-morelia.github.io/project/quetzally/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/quetzally/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>María Fernanda Cidel Rocasalvo</title>
+      <link>https://r-ladies-morelia.github.io/project/fernandacidel/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/fernandacidel/</guid>
+      <description>Licenciatura | Ecology | Bioinformatic | Phylogeography |</description>
+    </item>
+    <item>
+      <title>Liz Aleida Urióstegui Alejo</title>
+      <link>https://r-ladies-morelia.github.io/project/lizaleida/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/lizaleida/</guid>
+      <description>Estudiante de Doctorado | Microbiota | Bioestadística | Bioinformática | Miembro de R-Ladies</description>
+    </item>
+    <item>
+      <title>Laura Judith Giraldo Kalil (Doctorado)</title>
+      <link>https://r-ladies-morelia.github.io/project/laurajudith/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/laurajudith/</guid>
+      <description>Ecología evolutiva | Ecología funcional de plantas | Interacciones planta insecto | Botánica | Genética cuantitativa | Multilingüismo en la ciencia | R-ladies Morelia | Ilustración científica</description>
+    </item>
+    <item>
+      <title>Lic. en Matemáticas Mariel Guadalupe Gutiérrez Chaveste</title>
+      <link>https://r-ladies-morelia.github.io/project/marielg/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/marielg/</guid>
+      <description>Master&amp;rsquo;s degree student | Mathematics | Biomathematics | Data analysis | Data science | Web developing | Member R-Ladies</description>
+    </item>
+    <item>
+      <title>Erika Viridiana Cruz Bonilla</title>
+      <link>https://r-ladies-morelia.github.io/project/erikav/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/erikav/</guid>
+      <description>Aging genetics| Systems biology| Complex networks| Metagenomics</description>
+    </item>
+    <item>
+      <title>M.C. María Angeles Cárdenas Alvarado</title>
+      <link>https://r-ladies-morelia.github.io/project/mariaangeles/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariaangeles/</guid>
+      <description>Estudiante de Doctorado. Ecología Molecular. Arrecifes Coralinos. Ecología marina.</description>
+    </item>
+    <item>
+      <title>Amairani Cancino Bello </title>
+      <link>https://r-ladies-morelia.github.io/project/amairani/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/amairani/</guid>
+      <description>Estudiante de Doctorado | Microbiota | Bioestadística | Bioinformática | Miembro de R-Ladies</description>
+    </item>
+    <item>
+      <title>Dra. Anahi Aguilera</title>
+      <link>https://r-ladies-morelia.github.io/project/anahiaguilera/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/anahiaguilera/</guid>
+      <description>Posdoctoral researcher, environmental scientist, risk assessment, heavy metal pollution, environmental health, pollution assessment</description>
+    </item>
+    <item>
+      <title>Mayra del Carmen Fragoso Medina </title>
+      <link>https://r-ladies-morelia.github.io/project/mayrafragoso/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mayrafragoso/</guid>
+      <description>Manejo integral de Ecosistemas - Sistemas Socioecológicos - Investigación Acción - Interdisciplina - R ladies</description>
+    </item>
+    <item>
+      <title>Evelin Karina Buitrago Fernandez </title>
+      <link>https://r-ladies-morelia.github.io/project/evelinkarina/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/evelinkarina/</guid>
+      <description>Estudiante de maestría en ecología, metagenomica, bioinformática</description>
+    </item>
+    <item>
+      <title>Diana Berenice Ramírez Pineda</title>
+      <link>https://r-ladies-morelia.github.io/project/dianaberenice/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/dianaberenice/</guid>
+      <description>Estudiante de egresado no titulado de la licenciatura en ciencias genómicas campus Cuernavaca | Parkinson | Miembro de Mex-PD | Identificación de variantes genéticas</description>
+    </item>
+    <item>
+      <title>María José Palma Martínez</title>
+      <link>https://r-ladies-morelia.github.io/project/mariajosep/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariajosep/</guid>
+      <description>PhD student | Human Genetics | Member R-ladies</description>
+    </item>
+    <item>
+      <title>Maria Fernanda Miron Toruno</title>
+      <link>https://r-ladies-morelia.github.io/project/mariafernanda/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/mariafernanda/</guid>
+      <description>PhD student | Bioinformatics | PopGen | Evolution | Epigenomics</description>
+    </item>
+    <item>
+      <title>Dra. Aline Pingarroni</title>
+      <link>https://r-ladies-morelia.github.io/project/alinep/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/alinep/</guid>
+      <description>Professor Associate UNAMI Social-Ecological SystemsI Ecosystem Services AssessmentI Landscape EcologyI Biodiversity ConservationI Member, LA-PECS, ESP, R-Ladies</description>
+    </item>
+    <item>
       <title>Conectar GitHub con RStudio</title>
-      <link>http://localhost:4321/blog/conectar/</link>
+      <link>https://r-ladies-morelia.github.io/blog/conectar/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/conectar/</guid>
+      <guid>https://r-ladies-morelia.github.io/blog/conectar/</guid>
       <description>¿Cómo conectar GitHub con RStudio?&#xD;Generalmente cuando comenzamos un proyecto, el primer borrador no es el final y queremos una forma de poder llevar un registro de los cambios sobre el tiempo. Cuando colaboramos con otras personas, una forma de compartir el trabajo y hacer ediciones es enviarnos los archivos por email o manternerlos en alguna carpeta que todos tengamos acceso, sin embargo, si a alguien se le olvida avisarnos que hizo cambios o no actualiza los archivos vamos a estar trabajando sobre archivos diferentes y probablemente tengamos perdida de información o que lo que alguien realizo no nos coincide a nosotros.</description>
     </item>
     <item>
       <title>Crea tu página web</title>
-      <link>http://localhost:4321/project/webpage/</link>
+      <link>https://r-ladies-morelia.github.io/learn/webpage/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/webpage/</guid>
+      <guid>https://r-ladies-morelia.github.io/learn/webpage/</guid>
       <description>“En este tutorial aprenderemos a crear un sitio web personal/blog”&#xD;1. Set up&#xD;Antes comenzar es importante tener las versiones más recientes de R y RStudio:&#xA;R v&amp;gt;=3.6.0&#xA;RStudio &amp;gt;= 1.4&#xA;Nota: Necesitamos también tener una conexión de GitHub con RStudio, en el siguiente link está un tutorial de como realizarlo.&#xA;¿Cómo conectar GitHub con RStudio?&#xA;Por último necesitamos instalar lo siguiente:&#xA;Instalar blogdown: install.packages(&amp;quot;blogdown&amp;quot;)&#xA;Instalar Hugo: blogdown::install_hugo(), verificar que la versión sea una actual con blogdown::hugo_version().</description>
     </item>
     <item>
       <title>Encuentro de R-Ladies Morelia y R-Ladies Querétaro</title>
-      <link>http://localhost:4321/blog/encuentro/</link>
+      <link>https://r-ladies-morelia.github.io/blog/encuentro/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/encuentro/</guid>
+      <guid>https://r-ladies-morelia.github.io/blog/encuentro/</guid>
       <description>Encuentro de R-Ladies Morelia y R-Ladies Querétaro&#xD;En Febrero de 2024 R-Ladies Morelia y R-Ladies Querétaro comenzaron una colaboración para tener varias sesiones durante el semestre Febrero 2024 - Junio 2024. Los días 31 de mayo y 1 de junio vamos a tener un evento presencial e híbrido con apoyo de R Consortium RUGS Grants 2024 y Proyecto CONAHCYT Ciencia de Frontera CF2019 217392 &amp;ldquo;Cerrando brechas y extendiendo puentes en Geometría y Topología&amp;rdquo;.</description>
     </item>
     <item>
       <title>Web page</title>
-      <link>http://localhost:4321/talk/webpage/</link>
+      <link>https://r-ladies-morelia.github.io/talk/webpage/</link>
       <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/talk/webpage/</guid>
+      <guid>https://r-ladies-morelia.github.io/talk/webpage/</guid>
       <description>Más adelante aparecerá el link al video.</description>
     </item>
     <item>
       <title>Presentaciones con Xaringan y Quarto</title>
-      <link>http://localhost:4321/project/xaringan/</link>
+      <link>https://r-ladies-morelia.github.io/learn/xaringan/</link>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/xaringan/</guid>
+      <guid>https://r-ladies-morelia.github.io/learn/xaringan/</guid>
       <description>En este tutorial presentamos un ejemplo de como crear presentaciones con Xaringan y Quarto&#xD;En la siguiente liga se encuentra el tutorial para crear su presentación con Xaringan y Quarto:&#xA;Tutorial&#xA;Un ejemplo de presentación con Xaringan&#xA;Un ejemplo de presentación con Quarto&#xA;GitHub con todo el material y la platilla con tema de RLadies</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:4321/about/header/</link>
+      <link>https://r-ladies-morelia.github.io/about/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/about/header/</guid>
+      <guid>https://r-ladies-morelia.github.io/about/header/</guid>
       <description>Bienvenidas a R-ladies capítulo Morelia. Solemos tener una reunión híbrida al mes para aprender R. Eres bienvenida a aprender. En esta página encontrarás material de las sesiones de R-Ladies Morelia.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:4321/about/sidebar/</link>
+      <link>https://r-ladies-morelia.github.io/about/sidebar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/about/sidebar/</guid>
+      <guid>https://r-ladies-morelia.github.io/about/sidebar/</guid>
       <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
     </item>
     <item>
       <title>¿De qué se trata R-Ladies?</title>
-      <link>http://localhost:4321/about/main/</link>
+      <link>https://r-ladies-morelia.github.io/about/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/about/main/</guid>
+      <guid>https://r-ladies-morelia.github.io/about/main/</guid>
       <description>** index doesn&amp;rsquo;t contain a body, just front matter above. See about/list.html in the layouts folder **</description>
     </item>
     <item>
       <title>Contributors</title>
-      <link>http://localhost:4321/contributors/</link>
+      <link>https://r-ladies-morelia.github.io/contributors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/contributors/</guid>
+      <guid>https://r-ladies-morelia.github.io/contributors/</guid>
       <description></description>
     </item>
     <item>
       <title>License</title>
-      <link>http://localhost:4321/license/</link>
+      <link>https://r-ladies-morelia.github.io/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/license/</guid>
+      <guid>https://r-ladies-morelia.github.io/license/</guid>
       <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
     </item>
   </channel>

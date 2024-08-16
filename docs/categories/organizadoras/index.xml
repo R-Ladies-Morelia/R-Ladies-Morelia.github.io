@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Organizadoras on R-Ladies Morelia</title>
+    <link>https://r-ladies-morelia.github.io/categories/organizadoras/</link>
+    <description>Recent content in Organizadoras on R-Ladies Morelia</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://r-ladies-morelia.github.io/categories/organizadoras/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nelly Sélem Mojica</title>
+      <link>https://r-ladies-morelia.github.io/project/nelly/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/nelly/</guid>
+      <description>Nelly Sélem-Mojica Researcher | Metagenomics | Natural Products | Bacterial Genomics| rladies | Wikipedia</description>
+    </item>
+    <item>
+      <title>M en C Claudia Zirión Martínez</title>
+      <link>https://r-ladies-morelia.github.io/project/claudia/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/claudia/</guid>
+      <description>Bioinformatician | Natural genomic variation | Fungi</description>
+    </item>
+    <item>
+      <title>Haydeé Peruyero</title>
+      <link>https://r-ladies-morelia.github.io/project/haydee/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/haydee/</guid>
+      <description>Postdoctoral Research at Center of Sciences Mathematics - UNAM | Topological and Geometric Data Analysis | Bioinformatics | Geometric Group Theory | Global Riemannian Geometry | Quantum Geometry and Topology | Member of R-Ladies</description>
+    </item>
+    <item>
+      <title>Dra. Evelia Coss</title>
+      <link>https://r-ladies-morelia.github.io/project/evelia/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/evelia/</guid>
+      <description>Posdoctoral Research Associate | Bioinformation | lncRNAs | autoimmune diseases | Evolution | gene regulation | Member R-Ladies, LupusRGMX, Project JAGUAR</description>
+    </item>
+    <item>
+      <title>Goretty Nayeli Mendoza Juárez</title>
+      <link>https://r-ladies-morelia.github.io/project/gorety/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/gorety/</guid>
+      <description>Goretty Nayeli Mendoza Juárez. PhDStudent | MicrobialEcology | EndophyticFungi | Bioinformatics | MolecularBiology | R-Ladies Mexico member</description>
+    </item>
+    <item>
+      <title>María Fernanda Cidel Rocasalvo</title>
+      <link>https://r-ladies-morelia.github.io/project/fernandacidel/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://r-ladies-morelia.github.io/project/fernandacidel/</guid>
+      <description>Licenciatura | Ecology | Bioinformatic | Phylogeography |</description>
+    </item>
+  </channel>
+</rss>
